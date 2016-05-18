@@ -1,0 +1,27 @@
+{
+  "name": "u200b",
+  "version": "0.0.0",
+  "description": "Append, prepend, and insert zero-width space to string.",
+  "main": "u200b.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "zero-width-space",
+    "space",
+    "space-separator"
+  ],
+  "homepage": "https://github.com/volkovasystems/u200b",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "harden": "^0.2.0",
+    "raze": "^0.0.0"
+  }
+}
