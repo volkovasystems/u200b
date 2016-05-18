@@ -101,7 +101,7 @@ var U200b = function U200b( string ){
 	}else if( !( this instanceof U200b ) ){
 		var u200b = new U200b( );
 
-		return U200b.apply( u200b, string );
+		return U200b.apply( u200b, _string );
 
 	}else{
 		return U200b.U200B;
