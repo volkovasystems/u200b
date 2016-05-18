@@ -77,7 +77,7 @@ var U200b = function U200b( string ){
 		@end-meta-configuration
 	*/
 
-	let _string = raze( arguments );
+	var _string = raze( arguments );
 
 	if( this instanceof U200b ){
 		this._history = [ ];
@@ -99,7 +99,7 @@ var U200b = function U200b( string ){
 		return this;
 
 	}else if( !( this instanceof U200b ) ){
-		let u200b = new U200b( );
+		var u200b = new U200b( );
 
 		return U200b.apply( u200b, string );
 
@@ -149,7 +149,7 @@ U200b.prototype.append = function append( string ){
 		@end-meta-configuration
 	*/
 
-	let _string = raze( arguments )
+	var _string = raze( arguments )
 		.filter( function onEachParameter( parameter ){
 			return typeof parameter == "string";
 		} ) || [ ];
@@ -186,7 +186,7 @@ U200b.prototype.prepend = function prepend( string ){
 		@end-meta-configuration
 	*/
 
-	let _string = raze( arguments )
+	var _string = raze( arguments )
 		.filter( function onEachParameter( parameter ){
 			return typeof parameter == "string";
 		} ) || [ ];
@@ -227,12 +227,12 @@ U200b.prototype.insert = function insert( string, pattern ){
 		@end-meta-configuration
 	*/
 
-	let _string = raze( arguments )
+	var _string = raze( arguments )
 		.filter( function onEachParameter( parameter ){
 			return typeof parameter == "string";
 		} ) || [ ];
 
-	let _pattern = raze( arguments )
+	var _pattern = raze( arguments )
 		.filter( function onEachParameter( parameter ){
 			return parameter instanceof RegExp;
 		} )[ 0 ];
