@@ -3,6 +3,7 @@
 /*:
 	@module-license:
 		The MIT License (MIT)
+		@mit-license
 
 		Copyright (@c) 2016 Richeve Siodina Bebedor
 		@email: richeve.bebedor@gmail.com
@@ -28,13 +29,15 @@
 
 	@module-configuration:
 		{
-			"packageName": "u200b",
+			"package": "u200b",
 			"path": "u200b/u200b.js",
-			"fileName": "u200b.js",
-			"moduleName": "u200b",
-			"authorName": "Richeve S. Bebedor",
-			"authorEMail": "richeve.bebedor@gmail.com",
-			"repository": "git@github.com:volkovasystems/u200b.git"
+			"file": "u200b.js",
+			"module": "u200b",
+			"author": "Richeve S. Bebedor",
+			"eMail": "richeve.bebedor@gmail.com",
+			"repository": "https://github.com/volkovasystems/u200b.git",
+			"global": true,
+			"class": true
 		}
 	@end-module-configuration
 
@@ -43,13 +46,24 @@
 	@end-module-documentation
 
 	@include:
+		{
+			"diatom": "diatom",
+			"harden": "harden",
+			"raze": "raze"
+		}
 	@end-include
 */
 
 if( typeof window == "undefined" ){
+	var diatom = require( "diatom" );
 	var harden = require( "harden" );
-
 	var raze = require( "raze" );
+}
+
+if( typeof window != "undefined" &&
+	!( "diatom" in window ) )
+{
+	throw new Error( "diatom is not defined" );
 }
 
 if( typeof window != "undefined" &&
@@ -64,7 +78,14 @@ if( typeof window != "undefined" &&
 	throw new Error( "raze is not defined" );
 }
 
-var U200b = function U200b( string ){
+var U200b = diatom( "U200b" );
+
+harden( "U200B", "\u200b" );
+harden( "INSERT", "insert" );
+harden( "PREPEND", "prepend" );
+harden( "APPEND", "append" );
+
+U200b.prototype.initialize = function initialize( string ){
 	/*:
 		@meta-configuration:
 			{
@@ -79,36 +100,23 @@ var U200b = function U200b( string ){
 
 	var _string = raze( arguments );
 
-	if( this instanceof U200b ){
-		this._history = [ ];
-	}
+	//: This will handle the modification done to the strings.
+	this._history = this._history || [ ];
 
-	if( this instanceof U200b &&
-		_string.length )
-	{
-		//: Create a copy.
-		this._string = [ ].concat( _string );
+	//: Create an original copy.
+	this._string = [ ].concat( _string );
 
-		this.string = _string;
+	this.string = _string;
 
-		return this;
+	return this;
+};
 
-	}else if( this instanceof U200b &&
-		!_string.length )
-	{
-		return this;
-
-	}else if( !( this instanceof U200b ) ){
-		var u200b = new U200b( );
-
-		return U200b.apply( u200b, _string );
-
-	}else{
-		return U200b.U200B;
-	}
+U200b.prototype.separate = function separate( ){
+	return this.string.split( U200B );
 };
 
 U200b.prototype.release = function release( ){
+	//: If there are no modifications do the default insert.
 	if( !this._history.length ){
 		this.insert( );
 	}
@@ -133,7 +141,7 @@ U200b.prototype.valueOf = function valueOf( ){
 		Append zero-width space on every end of the string.
 
 		If new strings proceeds the old set strings
-			they will be appended but no zero-width space applied.
+			they will be appended and applied with zero-width space.
 	@end-method-documentation
 */
 U200b.prototype.append = function append( string ){
@@ -157,10 +165,10 @@ U200b.prototype.append = function append( string ){
 	this.string = this.string
 		.concat( _string )
 		.map( function onEachString( string ){
-			return string + U200b.U200B;
+			return string + U200B;
 		} );
 
-	this._history.push( "append" );
+	this._history.push( APPEND );
 
 	return this;
 };
@@ -170,7 +178,7 @@ U200b.prototype.append = function append( string ){
 		Prepend zero-width space on every start of the string.
 
 		If new strings preceeds the old set strings
-			they will be prepended but no zero-width space applied.
+			they will be prepended and applied with zero-width space.
 	@end-method-documentation
 */
 U200b.prototype.prepend = function prepend( string ){
@@ -194,10 +202,10 @@ U200b.prototype.prepend = function prepend( string ){
 	this.string = _string
 		.concat( this.string )
 		.map( function onEachString( string ){
-			return U200b.U200B + string;
+			return U200B + string;
 		} );
 
-	this._history.push( "prepend" );
+	this._history.push( PREPEND );
 
 	return this;
 };
@@ -206,10 +214,10 @@ U200b.prototype.prepend = function prepend( string ){
 	@method-documentation:
 		Inserts zero-width space on every gap of the string.
 
-		If new strings are inserted with the old set strings
+		If new strings are inserted with the old set strings,
 			zero-width space will be applied also.
 
-		If a pattern is supplied it will insert zero-width space
+		If a pattern is supplied, it will insert zero-width space
 			on every occurrence of the pattern on the string.
 	@end-method-documentation
 */
@@ -241,17 +249,17 @@ U200b.prototype.insert = function insert( string, pattern ){
 		this.string = this.string
 			.concat( _string )
 			.map( function onEachString( string ){
-				return string.replace( _pattern, U200b.U200B );
+				return string.replace( _pattern, U200B );
 			} );
 
 	}else{
 		this.string = this.string
 			.concat( _string )
-			.join( U200b.U200B + "," )
+			.join( U200B + "," )
 			.split( "," );
 	}
 
-	this._history.push( "insert" );
+	this._history.push( INSERT );
 
 	return this;
 };
@@ -263,6 +271,7 @@ U200b.prototype.insert = function insert( string, pattern ){
 		Clears history.
 
 		This does not include appended, prepended or inserted strings.
+			So the original string is the one you initialize.
 	@end-method-documentation
 */
 U200b.prototype.clear = function clear( ){
@@ -273,16 +282,6 @@ U200b.prototype.clear = function clear( ){
 	return this;
 };
 
-harden( "U200B", "\u200b", U200b );
-
 if( typeof module != "undefined" ){
 	module.exports = U200b;
-}
-
-if( typeof global != "undefined" ){
-	harden
-		.bind( U200b )( "globalize",
-			function globalize( ){
-				harden.bind( global )( "U200b", U200b );
-			} );
 }
