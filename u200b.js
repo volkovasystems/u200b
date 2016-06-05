@@ -112,7 +112,7 @@ U200b.prototype.initialize = function initialize( string ){
 };
 
 U200b.prototype.separate = function separate( ){
-	return this.string.split( U200B );
+	return this.string.join( "" ).split( U200B );
 };
 
 U200b.prototype.release = function release( ){
@@ -125,7 +125,7 @@ U200b.prototype.release = function release( ){
 };
 
 U200b.prototype.join = function join( separator ){
-	return this.release( ).join( separator || " " );
+	return this.release( ).join( separator || "" );
 };
 
 U200b.prototype.toString = function toString( ){
