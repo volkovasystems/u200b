@@ -57,6 +57,7 @@
 if( typeof window == "undefined" ){
 	var diatom = require( "diatom" );
 	var harden = require( "harden" );
+	var plough = require( "plough" );
 	var raze = require( "raze" );
 }
 
@@ -70,6 +71,12 @@ if( typeof window != "undefined" &&
 	!( "harden" in window ) )
 {
 	throw new Error( "harden is not defined" );
+}
+
+if( typeof window != "undefined" &&
+	!( "plough" in window ) )
+{
+	throw new Error( "plough is not defined" );
 }
 
 if( typeof window != "undefined" &&
@@ -99,6 +106,8 @@ U200b.prototype.initialize = function initialize( string ){
 	*/
 
 	var _string = raze( arguments );
+
+	_string = plough( _string );
 
 	//: This will handle the modification done to the strings.
 	this._history = this._history || [ ];

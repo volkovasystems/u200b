@@ -24,6 +24,7 @@
   "dependencies": {
     "diatom": "0.0.4",
     "harden": "^0.3.1",
+    "plough": "0.0.0",
     "raze": "0.0.4"
   }
 }
