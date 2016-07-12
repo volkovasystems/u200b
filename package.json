@@ -1,6 +1,6 @@
 {
   "name": "u200b",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Append, prepend, and insert zero-width space to string.",
   "main": "u200b.js",
   "scripts": {
@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/volkovasystems/u200b#readme",
   "dependencies": {
-    "diatom": "0.0.10",
+    "diatom": "^0.1.1",
     "harden": "^0.3.2",
     "plough": "0.0.1",
     "raze": "0.0.5"
