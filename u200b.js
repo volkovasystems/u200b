@@ -264,8 +264,8 @@ U200b.prototype.insert = function insert( string, pattern ){
 	}else{
 		this.string = this.string
 			.concat( _string )
-			.join( U200B + "," )
-			.split( "," );
+			.join( U200B + "[,]" )
+			.split( "[,]" );
 	}
 
 	this._history.push( INSERT );
