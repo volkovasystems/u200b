@@ -1,6 +1,6 @@
 "use strict";
 
-/*:
+/*;
 	@module-license:
 		The MIT License (MIT)
 		@mit-license
@@ -93,7 +93,7 @@ harden( "PREPEND", "prepend" );
 harden( "APPEND", "append" );
 
 U200b.prototype.initialize = function initialize( string ){
-	/*:
+	/*;
 		@meta-configuration:
 			{
 				"string": [
@@ -145,7 +145,7 @@ U200b.prototype.valueOf = function valueOf( ){
 	return this.release( );
 };
 
-/*:
+/*;
 	@method-documentation:
 		Append zero-width space on every end of the string.
 
@@ -154,7 +154,7 @@ U200b.prototype.valueOf = function valueOf( ){
 	@end-method-documentation
 */
 U200b.prototype.append = function append( string ){
-	/*:
+	/*;
 		@meta-configuration:
 			{
 				"string": [
@@ -182,7 +182,7 @@ U200b.prototype.append = function append( string ){
 	return this;
 };
 
-/*:
+/*;
 	@method-documentation:
 		Prepend zero-width space on every start of the string.
 
@@ -191,7 +191,7 @@ U200b.prototype.append = function append( string ){
 	@end-method-documentation
 */
 U200b.prototype.prepend = function prepend( string ){
-	/*:
+	/*;
 		@meta-configuration:
 			{
 				"string": [
@@ -219,7 +219,7 @@ U200b.prototype.prepend = function prepend( string ){
 	return this;
 };
 
-/*:
+/*;
 	@method-documentation:
 		Inserts zero-width space on every gap of the string.
 
@@ -231,7 +231,7 @@ U200b.prototype.prepend = function prepend( string ){
 	@end-method-documentation
 */
 U200b.prototype.insert = function insert( string, pattern ){
-	/*:
+	/*;
 		@meta-configuration:
 			{
 				"string": [
@@ -273,7 +273,7 @@ U200b.prototype.insert = function insert( string, pattern ){
 	return this;
 };
 
-/*:
+/*;
 	@method-documentation:
 		Reverts to the original string.
 
