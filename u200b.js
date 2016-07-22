@@ -145,6 +145,10 @@ U200b.prototype.valueOf = function valueOf( ){
 	return this.release( );
 };
 
+U200b.prototype.raw = function raw( ){
+	return this.toString( ).replace( new RegExp( U200B, "g" ), "" );
+};
+
 /*;
 	@method-documentation:
 		Append zero-width space on every end of the string.
