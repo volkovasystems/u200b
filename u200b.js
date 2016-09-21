@@ -121,8 +121,11 @@ U200b.prototype.initialize = function initialize( string ){
 	var text = raze( arguments );
 
 	text = plough( text )
-		.filter( function onEachText( text ){
-			return ( text && typeof text == "string" );
+		.map( function onEachParameter( parameter ){
+			return parameter.toString( );
+		} )
+		.filter( function onEachParameter( parameter ){
+			return ( parameter && typeof parameter == "string" );
 		} );
 
 	//: This will handle the modification done to the strings.
@@ -242,15 +245,20 @@ U200b.prototype.append = function append( string ){
 		@end-meta-configuration
 	*/
 
-	var text = raze( arguments )
+	var text = raze( arguments );
+
+	text = plough( text )
+		.map( function onEachParameter( parameter ){
+			return parameter.toString( );
+		} )
 		.filter( function onEachParameter( parameter ){
-			return ( text && typeof text == "string" );
+			return ( parameter && typeof parameter == "string" );
 		} ) || [ ];
 
 	this.string = this.string
 		.concat( text )
-		.map( ( function onEachString( string ){
-			return string + this.type;
+		.map( ( function onEachToken( token ){
+			return token + this.type;
 		} ).bind( this ) );
 
 	this.history.push( APPEND );
@@ -279,15 +287,20 @@ U200b.prototype.prepend = function prepend( string ){
 		@end-meta-configuration
 	*/
 
-	var text = raze( arguments )
+	var text = raze( arguments );
+
+	text = plough( text )
+		.map( function onEachParameter( parameter ){
+			return parameter.toString( );
+		} )
 		.filter( function onEachParameter( parameter ){
-			return ( text && typeof text == "string" );
+			return ( parameter && typeof parameter == "string" );
 		} ) || [ ];
 
 	this.string = text
 		.concat( this.string )
-		.map( ( function onEachString( string ){
-			return this.type + string;
+		.map( ( function onEachToken( token ){
+			return this.type + token;
 		} ).bind( this ) );
 
 	this.history.push( PREPEND );
@@ -320,9 +333,18 @@ U200b.prototype.insert = function insert( string, pattern ){
 		@end-meta-configuration
 	*/
 
-	var text = raze( arguments )
+	var text = raze( arguments );
+
+	text = plough( text )
+		.map( function onEachParameter( parameter ){
+			if( parameter instanceof RegExp ){
+				return null;
+			}
+
+			return parameter.toString( );
+		} )
 		.filter( function onEachParameter( parameter ){
-			return ( text && typeof text == "string" );
+			return ( parameter && typeof parameter == "string" );
 		} ) || [ ];
 
 	var template = raze( arguments )
@@ -333,8 +355,8 @@ U200b.prototype.insert = function insert( string, pattern ){
 	if( template ){
 		this.string = this.string
 			.concat( text )
-			.map( ( function onEachString( string ){
-				return string.replace( template, this.type );
+			.map( ( function onEachToken( token ){
+				return token.replace( template, this.type );
 			} ).bind( this ) );
 
 	}else{
