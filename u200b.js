@@ -42,13 +42,18 @@
 	@end-module-configuration
 
 	@module-documentation:
-		Append, prepend, and insert zero-width space to string.
+		Append, prepend, and insert zero-width space to non-empty string.
+
+		The main purpose of this is to make the string visible as it is
+			but we can still divide it the way we want it to be divided.
 	@end-module-documentation
 
 	@include:
 		{
 			"diatom": "diatom",
 			"harden": "harden",
+			"optfor": "optfor",
+			"plough": "plough",
 			"raze": "raze"
 		}
 	@end-include
@@ -57,6 +62,7 @@
 if( typeof window == "undefined" ){
 	var diatom = require( "diatom" );
 	var harden = require( "harden" );
+	var optfor = require( "optfor" );
 	var plough = require( "plough" );
 	var raze = require( "raze" );
 }
@@ -74,6 +80,12 @@ if( typeof window != "undefined" &&
 }
 
 if( typeof window != "undefined" &&
+	!( "optfor" in window ) )
+{
+	throw new Error( "optfor is not defined" );
+}
+
+if( typeof window != "undefined" &&
 	!( "plough" in window ) )
 {
 	throw new Error( "plough is not defined" );
@@ -88,6 +100,7 @@ if( typeof window != "undefined" &&
 var U200b = diatom( "U200b" );
 
 harden( "U200B", "\u200b" );
+harden( "U200B_BASE16", "ffffffff0000200bffffffff" );
 harden( "INSERT", "insert" );
 harden( "PREPEND", "prepend" );
 harden( "APPEND", "append" );
@@ -97,36 +110,95 @@ U200b.prototype.initialize = function initialize( string ){
 		@meta-configuration:
 			{
 				"string": [
-					"String",
-					"[String]",
+					"string",
+					"[string]",
 					"..."
 				]
 			}
 		@end-meta-configuration
 	*/
 
-	var _string = raze( arguments );
+	var text = raze( arguments );
 
-	_string = plough( _string );
+	text = plough( text )
+		.filter( function onEachText( text ){
+			return ( text && typeof text == "string" );
+		} );
 
 	//: This will handle the modification done to the strings.
-	this._history = this._history || [ ];
+	this.history = this.history || [ ];
 
 	//: Create an original copy.
-	this._string = [ ].concat( _string );
+	this.text = [ ].concat( text );
 
-	this.string = _string;
+	this.string = text;
+
+	this.type = U200B;
+
+	return this;
+};
+
+/*;
+	@method-documentation:
+		This will set the default base type of U200B
+			to any base type as long as it is supported.
+
+		Setting to use U200B_BASE16 will make the string size bigger.
+	@end-method-documentation
+*/
+U200b.prototype.base = function base( type ){
+	/*;
+		@meta-configuration:
+			{
+				"type:required": [
+					U200B,
+					U200B_BASE16
+				]
+			}
+		@end-meta-configuration
+	*/
+
+	if( type != U200B &&
+		type != U200B_BASE16 )
+	{
+		throw new Error( "invalid base type" );
+	}
+
+	this.type = type;
+
+	return this;
+};
+
+/*;
+	@method-documentation:
+		This will auto-identify the base type.
+	@end-method-documentation
+*/
+U200b.prototype.identify = function identify( ){
+	var string = this.string.join( "" );
+
+	if( ( new RegExp( U200B, "g" ) ).test( string ) ){
+		this.type = U200B;
+
+	}else if( ( new RegExp( U200B_BASE16, "g" ) ).test( string ) ){
+		this.type = U200B_BASE16;
+
+	}else{
+		this.type = U200B;
+	}
 
 	return this;
 };
 
 U200b.prototype.separate = function separate( ){
-	return this.string.join( "" ).split( U200B );
+	this.identify( );
+
+	return this.string.join( "" ).split( this.type );
 };
 
 U200b.prototype.release = function release( ){
 	//: If there are no modifications do the default insert.
-	if( !this._history.length ){
+	if( !this.history.length ){
 		this.insert( );
 	}
 
@@ -146,7 +218,7 @@ U200b.prototype.valueOf = function valueOf( ){
 };
 
 U200b.prototype.raw = function raw( ){
-	return this.toString( ).replace( new RegExp( U200B, "g" ), "" );
+	return this.toString( ).replace( new RegExp( this.type, "g" ), "" );
 };
 
 /*;
@@ -162,26 +234,26 @@ U200b.prototype.append = function append( string ){
 		@meta-configuration:
 			{
 				"string": [
-					"String",
-					"[String]",
+					"string",
+					"[string]",
 					"..."
 				]
 			}
 		@end-meta-configuration
 	*/
 
-	var _string = raze( arguments )
+	var text = raze( arguments )
 		.filter( function onEachParameter( parameter ){
-			return typeof parameter == "string";
+			return ( text && typeof text == "string" );
 		} ) || [ ];
 
 	this.string = this.string
-		.concat( _string )
-		.map( function onEachString( string ){
-			return string + U200B;
-		} );
+		.concat( text )
+		.map( ( function onEachString( string ){
+			return string + this.type;
+		} ).bind( this ) );
 
-	this._history.push( APPEND );
+	this.history.push( APPEND );
 
 	return this;
 };
@@ -199,26 +271,26 @@ U200b.prototype.prepend = function prepend( string ){
 		@meta-configuration:
 			{
 				"string": [
-					"String",
-					"[String]",
+					"string",
+					"[string]",
 					"..."
 				]
 			}
 		@end-meta-configuration
 	*/
 
-	var _string = raze( arguments )
+	var text = raze( arguments )
 		.filter( function onEachParameter( parameter ){
-			return typeof parameter == "string";
+			return ( text && typeof text == "string" );
 		} ) || [ ];
 
-	this.string = _string
+	this.string = text
 		.concat( this.string )
-		.map( function onEachString( string ){
-			return U200B + string;
-		} );
+		.map( ( function onEachString( string ){
+			return this.type + string;
+		} ).bind( this ) );
 
-	this._history.push( PREPEND );
+	this.history.push( PREPEND );
 
 	return this;
 };
@@ -239,8 +311,8 @@ U200b.prototype.insert = function insert( string, pattern ){
 		@meta-configuration:
 			{
 				"string": [
-					"String",
-					"[String]",
+					"string",
+					"[string]",
 					"..."
 				],
 				"pattern": "RegExp"
@@ -248,31 +320,31 @@ U200b.prototype.insert = function insert( string, pattern ){
 		@end-meta-configuration
 	*/
 
-	var _string = raze( arguments )
+	var text = raze( arguments )
 		.filter( function onEachParameter( parameter ){
-			return typeof parameter == "string";
+			return ( text && typeof text == "string" );
 		} ) || [ ];
 
-	var _pattern = raze( arguments )
+	var template = raze( arguments )
 		.filter( function onEachParameter( parameter ){
 			return parameter instanceof RegExp;
 		} )[ 0 ];
 
-	if( _pattern ){
+	if( template ){
 		this.string = this.string
-			.concat( _string )
-			.map( function onEachString( string ){
-				return string.replace( _pattern, U200B );
-			} );
+			.concat( text )
+			.map( ( function onEachString( string ){
+				return string.replace( template, this.type );
+			} ).bind( this ) );
 
 	}else{
 		this.string = this.string
-			.concat( _string )
-			.join( U200B + "[,]" )
+			.concat( text )
+			.join( this.type + "[,]" )
 			.split( "[,]" );
 	}
 
-	this._history.push( INSERT );
+	this.history.push( INSERT );
 
 	return this;
 };
@@ -288,9 +360,9 @@ U200b.prototype.insert = function insert( string, pattern ){
 	@end-method-documentation
 */
 U200b.prototype.clear = function clear( ){
-	this.string = this._string;
+	this.string = this.text;
 
-	this._history = [ ];
+	this.history = [ ];
 
 	return this;
 };
