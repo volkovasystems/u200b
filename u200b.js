@@ -136,7 +136,9 @@ U200b.prototype.initialize = function initialize( string ){
 
 	this.string = text;
 
-	this.type = U200B;
+	this.base( U200B );
+
+	this.identify( );
 
 	return this;
 };
@@ -194,8 +196,6 @@ U200b.prototype.identify = function identify( ){
 };
 
 U200b.prototype.separate = function separate( ){
-	this.identify( );
-
 	return this.string.join( "" ).split( this.type );
 };
 
