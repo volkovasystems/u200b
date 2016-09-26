@@ -52,9 +52,7 @@
 		{
 			"diatom": "diatom",
 			"harden": "harden",
-			"optfor": "optfor",
-			"plough": "plough",
-			"raze": "raze"
+			"plough": "plough"
 		}
 	@end-include
 */
@@ -62,9 +60,7 @@
 if( typeof window == "undefined" ){
 	var diatom = require( "diatom" );
 	var harden = require( "harden" );
-	var optfor = require( "optfor" );
 	var plough = require( "plough" );
-	var raze = require( "raze" );
 }
 
 if( typeof window != "undefined" &&
@@ -80,21 +76,9 @@ if( typeof window != "undefined" &&
 }
 
 if( typeof window != "undefined" &&
-	!( "optfor" in window ) )
-{
-	throw new Error( "optfor is not defined" );
-}
-
-if( typeof window != "undefined" &&
 	!( "plough" in window ) )
 {
 	throw new Error( "plough is not defined" );
-}
-
-if( typeof window != "undefined" &&
-	!( "raze" in window ) )
-{
-	throw new Error( "raze is not defined" );
 }
 
 var U200b = diatom( "U200b" );
@@ -118,9 +102,7 @@ U200b.prototype.initialize = function initialize( string ){
 		@end-meta-configuration
 	*/
 
-	var text = raze( arguments );
-
-	text = plough( text )
+	var text = plough( arguments )
 		.map( function onEachParameter( parameter ){
 			return parameter.toString( );
 		} )
@@ -245,9 +227,7 @@ U200b.prototype.append = function append( string ){
 		@end-meta-configuration
 	*/
 
-	var text = raze( arguments );
-
-	text = plough( text )
+	var text = plough( arguments )
 		.map( function onEachParameter( parameter ){
 			return parameter.toString( );
 		} )
@@ -287,9 +267,7 @@ U200b.prototype.prepend = function prepend( string ){
 		@end-meta-configuration
 	*/
 
-	var text = raze( arguments );
-
-	text = plough( text )
+	var text = plough( arguments )
 		.map( function onEachParameter( parameter ){
 			return parameter.toString( );
 		} )
@@ -333,9 +311,7 @@ U200b.prototype.insert = function insert( string, pattern ){
 		@end-meta-configuration
 	*/
 
-	var text = raze( arguments );
-
-	text = plough( text )
+	var text = plough( arguments )
 		.map( function onEachParameter( parameter ){
 			if( parameter instanceof RegExp ){
 				return null;
