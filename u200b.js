@@ -50,17 +50,29 @@
 
 	@include:
 		{
+			"arid": "arid",
 			"diatom": "diatom",
 			"harden": "harden",
-			"plough": "plough"
+			"optfor": "optfor",
+			"plough": "plough",
+			"truly": "truly"
 		}
 	@end-include
 */
 
 if( typeof window == "undefined" ){
+	var arid = require( "arid" );
 	var diatom = require( "diatom" );
 	var harden = require( "harden" );
+	var optfor = require( "optfor" );
 	var plough = require( "plough" );
+	var truly = require( "truly" );
+}
+
+if( typeof window != "undefined" &&
+	!( "arid" in window ) )
+{
+	throw new Error( "arid is not defined" );
 }
 
 if( typeof window != "undefined" &&
@@ -76,9 +88,21 @@ if( typeof window != "undefined" &&
 }
 
 if( typeof window != "undefined" &&
+	!( "optfor" in window ) )
+{
+	throw new Error( "optfor is not defined" );
+}
+
+if( typeof window != "undefined" &&
 	!( "plough" in window ) )
 {
 	throw new Error( "plough is not defined" );
+}
+
+if( typeof window != "undefined" &&
+	!( "truly" in window ) )
+{
+	throw new Error( "truly is not defined" );
 }
 
 var U200b = diatom( "U200b" );
@@ -102,12 +126,12 @@ U200b.prototype.initialize = function initialize( string ){
 		@end-meta-configuration
 	*/
 
-	var text = plough( arguments )
+	let text = plough( arguments )
 		.map( function onEachParameter( parameter ){
 			return parameter.toString( );
 		} )
 		.filter( function onEachParameter( parameter ){
-			return ( parameter && typeof parameter == "string" );
+			return ( truly( parameter ) && typeof parameter == STRING );
 		} );
 
 	//: This will handle the modification done to the strings.
@@ -145,9 +169,7 @@ U200b.prototype.base = function base( type ){
 		@end-meta-configuration
 	*/
 
-	if( type != U200B &&
-		type != U200B_BASE16 )
-	{
+	if( type !== U200B && type !== U200B_BASE16 ){
 		throw new Error( "invalid base type" );
 	}
 
@@ -162,7 +184,7 @@ U200b.prototype.base = function base( type ){
 	@end-method-documentation
 */
 U200b.prototype.identify = function identify( ){
-	var string = this.string.join( "" );
+	let string = this.string.join( "" );
 
 	if( ( new RegExp( U200B, "g" ) ).test( string ) ){
 		this.type = U200B;
@@ -183,7 +205,7 @@ U200b.prototype.separate = function separate( ){
 
 U200b.prototype.release = function release( ){
 	//: If there are no modifications do the default insert.
-	if( !this.history.length ){
+	if( arid( this.history ) ){
 		this.insert( );
 	}
 
@@ -227,12 +249,12 @@ U200b.prototype.append = function append( string ){
 		@end-meta-configuration
 	*/
 
-	var text = plough( arguments )
+	let text = plough( arguments )
 		.map( function onEachParameter( parameter ){
 			return parameter.toString( );
 		} )
 		.filter( function onEachParameter( parameter ){
-			return ( parameter && typeof parameter == "string" );
+			return ( truly( parameter ) && typeof parameter == STRING );
 		} ) || [ ];
 
 	this.string = this.string
@@ -267,12 +289,12 @@ U200b.prototype.prepend = function prepend( string ){
 		@end-meta-configuration
 	*/
 
-	var text = plough( arguments )
+	let text = plough( arguments )
 		.map( function onEachParameter( parameter ){
 			return parameter.toString( );
 		} )
 		.filter( function onEachParameter( parameter ){
-			return ( parameter && typeof parameter == "string" );
+			return ( truly( parameter ) && typeof parameter == STRING );
 		} ) || [ ];
 
 	this.string = text
@@ -311,7 +333,7 @@ U200b.prototype.insert = function insert( string, pattern ){
 		@end-meta-configuration
 	*/
 
-	var text = plough( arguments )
+	let text = plough( arguments )
 		.map( function onEachParameter( parameter ){
 			if( parameter instanceof RegExp ){
 				return null;
@@ -320,15 +342,12 @@ U200b.prototype.insert = function insert( string, pattern ){
 			return parameter.toString( );
 		} )
 		.filter( function onEachParameter( parameter ){
-			return ( parameter && typeof parameter == "string" );
+			return ( truly( parameter ) && typeof parameter == STRING );
 		} ) || [ ];
 
-	var template = raze( arguments )
-		.filter( function onEachParameter( parameter ){
-			return parameter instanceof RegExp;
-		} )[ 0 ];
+	let template = optfor( arguments, RegExp );
 
-	if( template ){
+	if( truly( template ) ){
 		this.string = this.string
 			.concat( text )
 			.map( ( function onEachToken( token ){
