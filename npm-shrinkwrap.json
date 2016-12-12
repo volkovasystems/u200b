@@ -1,267 +1,2962 @@
 {
   "name": "u200b",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "dependencies": {
-    "align-text": {
-      "version": "0.1.4",
-      "from": "align-text@>=0.1.3 <0.2.0",
-      "resolved": "https://registry.npmjs.org/align-text/-/align-text-0.1.4.tgz"
-    },
-    "amdefine": {
-      "version": "1.0.0",
-      "from": "amdefine@>=0.0.4",
-      "resolved": "https://registry.npmjs.org/amdefine/-/amdefine-1.0.0.tgz"
-    },
     "arid": {
-      "version": "0.0.3",
+      "version": "0.3.0",
       "from": "arid@latest",
-      "resolved": "https://registry.npmjs.org/arid/-/arid-0.0.3.tgz",
+      "resolved": "https://registry.npmjs.org/arid/-/arid-0.3.0.tgz",
       "dependencies": {
         "doubt": {
-          "version": "0.0.6",
+          "version": "0.4.0",
           "from": "doubt@latest",
-          "resolved": "https://registry.npmjs.org/doubt/-/doubt-0.0.6.tgz"
-        },
-        "harden": {
-          "version": "0.3.5",
-          "from": "harden@>=0.3.5 <0.4.0",
-          "resolved": "https://registry.npmjs.org/harden/-/harden-0.3.5.tgz"
-        },
-        "raze": {
-          "version": "0.0.8",
-          "from": "raze@0.0.8",
-          "resolved": "https://registry.npmjs.org/raze/-/raze-0.0.8.tgz"
+          "resolved": "https://registry.npmjs.org/doubt/-/doubt-0.4.0.tgz",
+          "dependencies": {
+            "cemento": {
+              "version": "0.3.0",
+              "from": "cemento@latest",
+              "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+              "dependencies": {
+                "harden": {
+                  "version": "0.7.0",
+                  "from": "harden@latest",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                }
+              }
+            },
+            "harden": {
+              "version": "0.7.0",
+              "from": "harden@latest",
+              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+            },
+            "protype": {
+              "version": "0.4.0",
+              "from": "protype@latest",
+              "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+              "dependencies": {
+                "cemento": {
+                  "version": "0.3.0",
+                  "from": "cemento@latest",
+                  "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                  "dependencies": {
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    }
+                  }
+                },
+                "harden": {
+                  "version": "0.7.0",
+                  "from": "harden@latest",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                }
+              }
+            }
+          }
         },
         "truly": {
-          "version": "0.0.1",
+          "version": "0.3.0",
           "from": "truly@latest",
-          "resolved": "https://registry.npmjs.org/truly/-/truly-0.0.1.tgz"
+          "resolved": "https://registry.npmjs.org/truly/-/truly-0.3.0.tgz",
+          "dependencies": {
+            "protype": {
+              "version": "0.4.0",
+              "from": "protype@latest",
+              "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+              "dependencies": {
+                "cemento": {
+                  "version": "0.3.0",
+                  "from": "cemento@latest",
+                  "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                  "dependencies": {
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    }
+                  }
+                },
+                "harden": {
+                  "version": "0.7.0",
+                  "from": "harden@latest",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                }
+              }
+            }
+          }
         }
       }
-    },
-    "asea": {
-      "version": "0.1.2",
-      "from": "asea@>=0.1.2 <0.2.0",
-      "resolved": "https://registry.npmjs.org/asea/-/asea-0.1.2.tgz"
-    },
-    "async": {
-      "version": "1.5.2",
-      "from": "async@>=1.4.0 <2.0.0",
-      "resolved": "https://registry.npmjs.org/async/-/async-1.5.2.tgz"
-    },
-    "camelcase": {
-      "version": "1.2.1",
-      "from": "camelcase@>=1.0.2 <2.0.0",
-      "resolved": "https://registry.npmjs.org/camelcase/-/camelcase-1.2.1.tgz",
-      "optional": true
-    },
-    "center-align": {
-      "version": "0.1.3",
-      "from": "center-align@>=0.1.1 <0.2.0",
-      "resolved": "https://registry.npmjs.org/center-align/-/center-align-0.1.3.tgz",
-      "optional": true
-    },
-    "cliui": {
-      "version": "2.1.0",
-      "from": "cliui@>=2.1.0 <3.0.0",
-      "resolved": "https://registry.npmjs.org/cliui/-/cliui-2.1.0.tgz",
-      "optional": true,
-      "dependencies": {
-        "wordwrap": {
-          "version": "0.0.2",
-          "from": "wordwrap@0.0.2",
-          "resolved": "https://registry.npmjs.org/wordwrap/-/wordwrap-0.0.2.tgz",
-          "optional": true
-        }
-      }
-    },
-    "decamelize": {
-      "version": "1.2.0",
-      "from": "decamelize@>=1.0.0 <2.0.0",
-      "resolved": "https://registry.npmjs.org/decamelize/-/decamelize-1.2.0.tgz",
-      "optional": true
     },
     "diatom": {
-      "version": "0.2.4",
+      "version": "0.3.0",
       "from": "diatom@latest",
-      "resolved": "https://registry.npmjs.org/diatom/-/diatom-0.2.4.tgz"
-    },
-    "disdo": {
-      "version": "0.1.1",
-      "from": "disdo@>=0.1.1 <0.2.0",
-      "resolved": "https://registry.npmjs.org/disdo/-/disdo-0.1.1.tgz"
-    },
-    "excursio": {
-      "version": "0.0.8",
-      "from": "excursio@0.0.8",
-      "resolved": "https://registry.npmjs.org/excursio/-/excursio-0.0.8.tgz"
-    },
-    "handlebars": {
-      "version": "4.0.5",
-      "from": "handlebars@>=4.0.5 <5.0.0",
-      "resolved": "https://registry.npmjs.org/handlebars/-/handlebars-4.0.5.tgz"
+      "resolved": "https://registry.npmjs.org/diatom/-/diatom-0.3.0.tgz",
+      "dependencies": {
+        "falzy": {
+          "version": "0.5.0",
+          "from": "falzy@latest",
+          "resolved": "https://registry.npmjs.org/falzy/-/falzy-0.5.0.tgz",
+          "dependencies": {
+            "protype": {
+              "version": "0.4.0",
+              "from": "protype@latest",
+              "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+              "dependencies": {
+                "cemento": {
+                  "version": "0.3.0",
+                  "from": "cemento@latest",
+                  "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                  "dependencies": {
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    }
+                  }
+                },
+                "harden": {
+                  "version": "0.7.0",
+                  "from": "harden@latest",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                }
+              }
+            }
+          }
+        },
+        "komento": {
+          "version": "0.5.0",
+          "from": "komento@latest",
+          "resolved": "https://registry.npmjs.org/komento/-/komento-0.5.0.tgz",
+          "dependencies": {
+            "align-text": {
+              "version": "0.1.4",
+              "from": "align-text@>=0.1.3 <0.2.0",
+              "resolved": "https://registry.npmjs.org/align-text/-/align-text-0.1.4.tgz"
+            },
+            "amdefine": {
+              "version": "1.0.1",
+              "from": "amdefine@>=0.0.4",
+              "resolved": "https://registry.npmjs.org/amdefine/-/amdefine-1.0.1.tgz"
+            },
+            "async": {
+              "version": "1.5.2",
+              "from": "async@>=1.4.0 <2.0.0",
+              "resolved": "https://registry.npmjs.org/async/-/async-1.5.2.tgz"
+            },
+            "camelcase": {
+              "version": "1.2.1",
+              "from": "camelcase@>=1.0.2 <2.0.0",
+              "resolved": "https://registry.npmjs.org/camelcase/-/camelcase-1.2.1.tgz",
+              "optional": true
+            },
+            "center-align": {
+              "version": "0.1.3",
+              "from": "center-align@>=0.1.1 <0.2.0",
+              "resolved": "https://registry.npmjs.org/center-align/-/center-align-0.1.3.tgz",
+              "optional": true
+            },
+            "cliui": {
+              "version": "2.1.0",
+              "from": "cliui@>=2.1.0 <3.0.0",
+              "resolved": "https://registry.npmjs.org/cliui/-/cliui-2.1.0.tgz",
+              "optional": true,
+              "dependencies": {
+                "wordwrap": {
+                  "version": "0.0.2",
+                  "from": "wordwrap@0.0.2",
+                  "resolved": "https://registry.npmjs.org/wordwrap/-/wordwrap-0.0.2.tgz",
+                  "optional": true
+                }
+              }
+            },
+            "decamelize": {
+              "version": "1.2.0",
+              "from": "decamelize@>=1.0.0 <2.0.0",
+              "resolved": "https://registry.npmjs.org/decamelize/-/decamelize-1.2.0.tgz",
+              "optional": true
+            },
+            "handlebars": {
+              "version": "4.0.6",
+              "from": "handlebars@latest",
+              "resolved": "https://registry.npmjs.org/handlebars/-/handlebars-4.0.6.tgz"
+            },
+            "harden": {
+              "version": "0.9.0",
+              "from": "harden@latest",
+              "resolved": "https://registry.npmjs.org/harden/-/harden-0.9.0.tgz",
+              "dependencies": {
+                "babel-runtime": {
+                  "version": "6.20.0",
+                  "from": "babel-runtime@latest",
+                  "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz",
+                  "dependencies": {
+                    "regenerator-runtime": {
+                      "version": "0.10.1",
+                      "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                      "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                    }
+                  }
+                },
+                "core-js": {
+                  "version": "2.4.1",
+                  "from": "core-js@>=2.4.0 <3.0.0",
+                  "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                }
+              }
+            },
+            "is-buffer": {
+              "version": "1.1.4",
+              "from": "is-buffer@>=1.0.2 <2.0.0",
+              "resolved": "https://registry.npmjs.org/is-buffer/-/is-buffer-1.1.4.tgz"
+            },
+            "kind-of": {
+              "version": "3.1.0",
+              "from": "kind-of@>=3.0.2 <4.0.0",
+              "resolved": "https://registry.npmjs.org/kind-of/-/kind-of-3.1.0.tgz"
+            },
+            "lazy-cache": {
+              "version": "1.0.4",
+              "from": "lazy-cache@>=1.0.3 <2.0.0",
+              "resolved": "https://registry.npmjs.org/lazy-cache/-/lazy-cache-1.0.4.tgz",
+              "optional": true
+            },
+            "longest": {
+              "version": "1.0.1",
+              "from": "longest@>=1.0.1 <2.0.0",
+              "resolved": "https://registry.npmjs.org/longest/-/longest-1.0.1.tgz"
+            },
+            "minimist": {
+              "version": "0.0.10",
+              "from": "minimist@>=0.0.1 <0.1.0",
+              "resolved": "https://registry.npmjs.org/minimist/-/minimist-0.0.10.tgz"
+            },
+            "optimist": {
+              "version": "0.6.1",
+              "from": "optimist@>=0.6.1 <0.7.0",
+              "resolved": "https://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz"
+            },
+            "protype": {
+              "version": "0.4.0",
+              "from": "protype@latest",
+              "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+              "dependencies": {
+                "cemento": {
+                  "version": "0.3.0",
+                  "from": "cemento@latest",
+                  "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                  "dependencies": {
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    }
+                  }
+                },
+                "harden": {
+                  "version": "0.7.0",
+                  "from": "harden@latest",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                }
+              }
+            },
+            "realign": {
+              "version": "0.2.0",
+              "from": "realign@latest",
+              "resolved": "https://registry.npmjs.org/realign/-/realign-0.2.0.tgz",
+              "dependencies": {
+                "falzy": {
+                  "version": "0.5.0",
+                  "from": "falzy@latest",
+                  "resolved": "https://registry.npmjs.org/falzy/-/falzy-0.5.0.tgz",
+                  "dependencies": {
+                    "protype": {
+                      "version": "0.4.0",
+                      "from": "protype@latest",
+                      "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                      "dependencies": {
+                        "cemento": {
+                          "version": "0.3.0",
+                          "from": "cemento@latest",
+                          "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                          "dependencies": {
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            }
+                          }
+                        },
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    }
+                  }
+                },
+                "harden": {
+                  "version": "0.7.0",
+                  "from": "harden@latest",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                },
+                "protype": {
+                  "version": "0.4.0",
+                  "from": "protype@latest",
+                  "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                  "dependencies": {
+                    "cemento": {
+                      "version": "0.3.0",
+                      "from": "cemento@latest",
+                      "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                      "dependencies": {
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    },
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    }
+                  }
+                },
+                "truly": {
+                  "version": "0.3.0",
+                  "from": "truly@latest",
+                  "resolved": "https://registry.npmjs.org/truly/-/truly-0.3.0.tgz",
+                  "dependencies": {
+                    "protype": {
+                      "version": "0.4.0",
+                      "from": "protype@latest",
+                      "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                      "dependencies": {
+                        "cemento": {
+                          "version": "0.3.0",
+                          "from": "cemento@latest",
+                          "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                          "dependencies": {
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            }
+                          }
+                        },
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "repeat-string": {
+              "version": "1.6.1",
+              "from": "repeat-string@>=1.5.2 <2.0.0",
+              "resolved": "https://registry.npmjs.org/repeat-string/-/repeat-string-1.6.1.tgz"
+            },
+            "right-align": {
+              "version": "0.1.3",
+              "from": "right-align@>=0.1.1 <0.2.0",
+              "resolved": "https://registry.npmjs.org/right-align/-/right-align-0.1.3.tgz",
+              "optional": true
+            },
+            "source-map": {
+              "version": "0.4.4",
+              "from": "source-map@>=0.4.4 <0.5.0",
+              "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.4.4.tgz"
+            },
+            "stuffed": {
+              "version": "0.1.0",
+              "from": "stuffed@latest",
+              "resolved": "https://registry.npmjs.org/stuffed/-/stuffed-0.1.0.tgz",
+              "dependencies": {
+                "doubt": {
+                  "version": "0.4.0",
+                  "from": "doubt@latest",
+                  "resolved": "https://registry.npmjs.org/doubt/-/doubt-0.4.0.tgz",
+                  "dependencies": {
+                    "cemento": {
+                      "version": "0.3.0",
+                      "from": "cemento@latest",
+                      "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                      "dependencies": {
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    },
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    },
+                    "protype": {
+                      "version": "0.4.0",
+                      "from": "protype@latest",
+                      "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                      "dependencies": {
+                        "cemento": {
+                          "version": "0.3.0",
+                          "from": "cemento@latest",
+                          "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                          "dependencies": {
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            }
+                          }
+                        },
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    }
+                  }
+                },
+                "kount": {
+                  "version": "0.0.0",
+                  "from": "kount@latest",
+                  "resolved": "https://registry.npmjs.org/kount/-/kount-0.0.0.tgz"
+                },
+                "protype": {
+                  "version": "0.4.0",
+                  "from": "protype@latest",
+                  "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                  "dependencies": {
+                    "cemento": {
+                      "version": "0.3.0",
+                      "from": "cemento@latest",
+                      "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                      "dependencies": {
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    },
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    }
+                  }
+                },
+                "truly": {
+                  "version": "0.3.0",
+                  "from": "truly@latest",
+                  "resolved": "https://registry.npmjs.org/truly/-/truly-0.3.0.tgz",
+                  "dependencies": {
+                    "protype": {
+                      "version": "0.4.0",
+                      "from": "protype@latest",
+                      "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                      "dependencies": {
+                        "cemento": {
+                          "version": "0.3.0",
+                          "from": "cemento@latest",
+                          "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                          "dependencies": {
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            }
+                          }
+                        },
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "truly": {
+              "version": "0.3.0",
+              "from": "truly@latest",
+              "resolved": "https://registry.npmjs.org/truly/-/truly-0.3.0.tgz",
+              "dependencies": {
+                "protype": {
+                  "version": "0.4.0",
+                  "from": "protype@latest",
+                  "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                  "dependencies": {
+                    "cemento": {
+                      "version": "0.3.0",
+                      "from": "cemento@latest",
+                      "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                      "dependencies": {
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    },
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    }
+                  }
+                }
+              }
+            },
+            "uglify-js": {
+              "version": "2.7.5",
+              "from": "uglify-js@>=2.6.0 <3.0.0",
+              "resolved": "https://registry.npmjs.org/uglify-js/-/uglify-js-2.7.5.tgz",
+              "optional": true,
+              "dependencies": {
+                "async": {
+                  "version": "0.2.10",
+                  "from": "async@>=0.2.6 <0.3.0",
+                  "resolved": "https://registry.npmjs.org/async/-/async-0.2.10.tgz",
+                  "optional": true
+                },
+                "source-map": {
+                  "version": "0.5.6",
+                  "from": "source-map@>=0.5.1 <0.6.0",
+                  "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.5.6.tgz",
+                  "optional": true
+                }
+              }
+            },
+            "uglify-to-browserify": {
+              "version": "1.0.2",
+              "from": "uglify-to-browserify@>=1.0.0 <1.1.0",
+              "resolved": "https://registry.npmjs.org/uglify-to-browserify/-/uglify-to-browserify-1.0.2.tgz",
+              "optional": true
+            },
+            "window-size": {
+              "version": "0.1.0",
+              "from": "window-size@0.1.0",
+              "resolved": "https://registry.npmjs.org/window-size/-/window-size-0.1.0.tgz",
+              "optional": true
+            },
+            "wordwrap": {
+              "version": "0.0.3",
+              "from": "wordwrap@>=0.0.2 <0.1.0",
+              "resolved": "https://registry.npmjs.org/wordwrap/-/wordwrap-0.0.3.tgz"
+            },
+            "yargs": {
+              "version": "3.10.0",
+              "from": "yargs@>=3.10.0 <3.11.0",
+              "resolved": "https://registry.npmjs.org/yargs/-/yargs-3.10.0.tgz",
+              "optional": true
+            }
+          }
+        },
+        "llamalize": {
+          "version": "0.4.0",
+          "from": "llamalize@latest",
+          "resolved": "https://registry.npmjs.org/llamalize/-/llamalize-0.4.0.tgz",
+          "dependencies": {
+            "falzy": {
+              "version": "0.5.0",
+              "from": "falzy@latest",
+              "resolved": "https://registry.npmjs.org/falzy/-/falzy-0.5.0.tgz",
+              "dependencies": {
+                "protype": {
+                  "version": "0.4.0",
+                  "from": "protype@latest",
+                  "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                  "dependencies": {
+                    "cemento": {
+                      "version": "0.3.0",
+                      "from": "cemento@latest",
+                      "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                      "dependencies": {
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    },
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    }
+                  }
+                }
+              }
+            },
+            "harden": {
+              "version": "0.7.0",
+              "from": "harden@latest",
+              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+            },
+            "protype": {
+              "version": "0.4.0",
+              "from": "protype@latest",
+              "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+              "dependencies": {
+                "cemento": {
+                  "version": "0.3.0",
+                  "from": "cemento@latest",
+                  "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                  "dependencies": {
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    }
+                  }
+                },
+                "harden": {
+                  "version": "0.7.0",
+                  "from": "harden@latest",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                }
+              }
+            },
+            "titlelize": {
+              "version": "0.3.0",
+              "from": "titlelize@latest",
+              "resolved": "https://registry.npmjs.org/titlelize/-/titlelize-0.3.0.tgz",
+              "dependencies": {
+                "disdo": {
+                  "version": "0.2.0",
+                  "from": "disdo@latest",
+                  "resolved": "https://registry.npmjs.org/disdo/-/disdo-0.2.0.tgz",
+                  "dependencies": {
+                    "falzy": {
+                      "version": "0.5.0",
+                      "from": "falzy@latest",
+                      "resolved": "https://registry.npmjs.org/falzy/-/falzy-0.5.0.tgz",
+                      "dependencies": {
+                        "protype": {
+                          "version": "0.4.0",
+                          "from": "protype@latest",
+                          "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                          "dependencies": {
+                            "cemento": {
+                              "version": "0.3.0",
+                              "from": "cemento@latest",
+                              "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                              "dependencies": {
+                                "harden": {
+                                  "version": "0.7.0",
+                                  "from": "harden@latest",
+                                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                                }
+                              }
+                            },
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    },
+                    "protype": {
+                      "version": "0.4.0",
+                      "from": "protype@latest",
+                      "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                      "dependencies": {
+                        "cemento": {
+                          "version": "0.3.0",
+                          "from": "cemento@latest",
+                          "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                          "dependencies": {
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            }
+                          }
+                        },
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    }
+                  }
+                },
+                "falzy": {
+                  "version": "0.5.0",
+                  "from": "falzy@latest",
+                  "resolved": "https://registry.npmjs.org/falzy/-/falzy-0.5.0.tgz",
+                  "dependencies": {
+                    "protype": {
+                      "version": "0.4.0",
+                      "from": "protype@latest",
+                      "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                      "dependencies": {
+                        "cemento": {
+                          "version": "0.3.0",
+                          "from": "cemento@latest",
+                          "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                          "dependencies": {
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            }
+                          }
+                        },
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    }
+                  }
+                },
+                "harden": {
+                  "version": "0.7.0",
+                  "from": "harden@latest",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                },
+                "protype": {
+                  "version": "0.4.0",
+                  "from": "protype@latest",
+                  "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                  "dependencies": {
+                    "cemento": {
+                      "version": "0.3.0",
+                      "from": "cemento@latest",
+                      "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                      "dependencies": {
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    },
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "protype": {
+          "version": "0.4.0",
+          "from": "protype@latest",
+          "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+          "dependencies": {
+            "cemento": {
+              "version": "0.3.0",
+              "from": "cemento@latest",
+              "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+              "dependencies": {
+                "harden": {
+                  "version": "0.7.0",
+                  "from": "harden@latest",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                }
+              }
+            },
+            "harden": {
+              "version": "0.7.0",
+              "from": "harden@latest",
+              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+            }
+          }
+        }
+      }
     },
     "harden": {
-      "version": "0.3.5",
+      "version": "0.9.0",
       "from": "harden@latest",
-      "resolved": "https://registry.npmjs.org/harden/-/harden-0.3.5.tgz"
-    },
-    "is-buffer": {
-      "version": "1.1.4",
-      "from": "is-buffer@>=1.0.2 <2.0.0",
-      "resolved": "https://registry.npmjs.org/is-buffer/-/is-buffer-1.1.4.tgz"
-    },
-    "kind-of": {
-      "version": "3.0.4",
-      "from": "kind-of@>=3.0.2 <4.0.0",
-      "resolved": "https://registry.npmjs.org/kind-of/-/kind-of-3.0.4.tgz"
-    },
-    "komento": {
-      "version": "0.2.5",
-      "from": "komento@>=0.2.5 <0.3.0",
-      "resolved": "https://registry.npmjs.org/komento/-/komento-0.2.5.tgz"
-    },
-    "lazy-cache": {
-      "version": "1.0.4",
-      "from": "lazy-cache@>=1.0.3 <2.0.0",
-      "resolved": "https://registry.npmjs.org/lazy-cache/-/lazy-cache-1.0.4.tgz",
-      "optional": true
-    },
-    "llamalize": {
-      "version": "0.2.1",
-      "from": "llamalize@>=0.2.1 <0.3.0",
-      "resolved": "https://registry.npmjs.org/llamalize/-/llamalize-0.2.1.tgz"
-    },
-    "longest": {
-      "version": "1.0.1",
-      "from": "longest@>=1.0.1 <2.0.0",
-      "resolved": "https://registry.npmjs.org/longest/-/longest-1.0.1.tgz"
-    },
-    "minimist": {
-      "version": "0.0.10",
-      "from": "minimist@>=0.0.1 <0.1.0",
-      "resolved": "https://registry.npmjs.org/minimist/-/minimist-0.0.10.tgz"
+      "resolved": "https://registry.npmjs.org/harden/-/harden-0.9.0.tgz",
+      "dependencies": {
+        "babel-runtime": {
+          "version": "6.20.0",
+          "from": "babel-runtime@latest",
+          "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz",
+          "dependencies": {
+            "regenerator-runtime": {
+              "version": "0.10.1",
+              "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+              "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+            }
+          }
+        },
+        "core-js": {
+          "version": "2.4.1",
+          "from": "core-js@>=2.4.0 <3.0.0",
+          "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+        }
+      }
     },
     "optfor": {
-      "version": "0.2.0",
+      "version": "0.5.0",
       "from": "optfor@latest",
-      "resolved": "https://registry.npmjs.org/optfor/-/optfor-0.2.0.tgz"
-    },
-    "optimist": {
-      "version": "0.6.1",
-      "from": "optimist@>=0.6.1 <0.7.0",
-      "resolved": "https://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz"
-    },
-    "plough": {
-      "version": "0.0.5",
-      "from": "plough@latest",
-      "resolved": "https://registry.npmjs.org/plough/-/plough-0.0.5.tgz",
+      "resolved": "https://registry.npmjs.org/optfor/-/optfor-0.5.0.tgz",
       "dependencies": {
-        "asea": {
-          "version": "0.1.2",
-          "from": "asea@latest",
-          "resolved": "https://registry.npmjs.org/asea/-/asea-0.1.2.tgz"
-        },
-        "decrease": {
-          "version": "0.0.3",
-          "from": "decrease@latest",
-          "resolved": "https://registry.npmjs.org/decrease/-/decrease-0.0.3.tgz"
-        },
         "doubt": {
-          "version": "0.0.6",
+          "version": "0.4.0",
           "from": "doubt@latest",
-          "resolved": "https://registry.npmjs.org/doubt/-/doubt-0.0.6.tgz"
+          "resolved": "https://registry.npmjs.org/doubt/-/doubt-0.4.0.tgz",
+          "dependencies": {
+            "cemento": {
+              "version": "0.3.0",
+              "from": "cemento@latest",
+              "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+              "dependencies": {
+                "harden": {
+                  "version": "0.7.0",
+                  "from": "harden@latest",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                }
+              }
+            },
+            "harden": {
+              "version": "0.7.0",
+              "from": "harden@latest",
+              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+            },
+            "protype": {
+              "version": "0.4.0",
+              "from": "protype@latest",
+              "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+              "dependencies": {
+                "cemento": {
+                  "version": "0.3.0",
+                  "from": "cemento@latest",
+                  "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                  "dependencies": {
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    }
+                  }
+                },
+                "harden": {
+                  "version": "0.7.0",
+                  "from": "harden@latest",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                }
+              }
+            }
+          }
+        },
+        "falze": {
+          "version": "0.2.0",
+          "from": "falze@latest",
+          "resolved": "https://registry.npmjs.org/falze/-/falze-0.2.0.tgz",
+          "dependencies": {
+            "arid": {
+              "version": "0.3.0",
+              "from": "arid@>=0.3.0 <0.4.0",
+              "resolved": "https://registry.npmjs.org/arid/-/arid-0.3.0.tgz",
+              "dependencies": {
+                "doubt": {
+                  "version": "0.4.0",
+                  "from": "doubt@latest",
+                  "resolved": "https://registry.npmjs.org/doubt/-/doubt-0.4.0.tgz",
+                  "dependencies": {
+                    "cemento": {
+                      "version": "0.3.0",
+                      "from": "cemento@latest",
+                      "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                      "dependencies": {
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    },
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    },
+                    "protype": {
+                      "version": "0.4.0",
+                      "from": "protype@latest",
+                      "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                      "dependencies": {
+                        "cemento": {
+                          "version": "0.3.0",
+                          "from": "cemento@latest",
+                          "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                          "dependencies": {
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            }
+                          }
+                        },
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    }
+                  }
+                },
+                "truly": {
+                  "version": "0.3.0",
+                  "from": "truly@latest",
+                  "resolved": "https://registry.npmjs.org/truly/-/truly-0.3.0.tgz",
+                  "dependencies": {
+                    "protype": {
+                      "version": "0.4.0",
+                      "from": "protype@latest",
+                      "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                      "dependencies": {
+                        "cemento": {
+                          "version": "0.3.0",
+                          "from": "cemento@latest",
+                          "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                          "dependencies": {
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            }
+                          }
+                        },
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "doubt": {
+              "version": "0.4.0",
+              "from": "doubt@>=0.4.0 <0.5.0",
+              "resolved": "https://registry.npmjs.org/doubt/-/doubt-0.4.0.tgz",
+              "dependencies": {
+                "cemento": {
+                  "version": "0.3.0",
+                  "from": "cemento@latest",
+                  "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                  "dependencies": {
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    }
+                  }
+                },
+                "harden": {
+                  "version": "0.7.0",
+                  "from": "harden@latest",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                },
+                "protype": {
+                  "version": "0.4.0",
+                  "from": "protype@latest",
+                  "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                  "dependencies": {
+                    "cemento": {
+                      "version": "0.3.0",
+                      "from": "cemento@latest",
+                      "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                      "dependencies": {
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    },
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    }
+                  }
+                }
+              }
+            },
+            "empt": {
+              "version": "0.2.0",
+              "from": "empt@>=0.2.0 <0.3.0",
+              "resolved": "https://registry.npmjs.org/empt/-/empt-0.2.0.tgz",
+              "dependencies": {
+                "doubt": {
+                  "version": "0.4.0",
+                  "from": "doubt@latest",
+                  "resolved": "https://registry.npmjs.org/doubt/-/doubt-0.4.0.tgz",
+                  "dependencies": {
+                    "cemento": {
+                      "version": "0.3.0",
+                      "from": "cemento@latest",
+                      "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                      "dependencies": {
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    },
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    },
+                    "protype": {
+                      "version": "0.4.0",
+                      "from": "protype@latest",
+                      "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                      "dependencies": {
+                        "cemento": {
+                          "version": "0.3.0",
+                          "from": "cemento@latest",
+                          "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                          "dependencies": {
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            }
+                          }
+                        },
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    }
+                  }
+                },
+                "kount": {
+                  "version": "0.0.0",
+                  "from": "kount@latest",
+                  "resolved": "https://registry.npmjs.org/kount/-/kount-0.0.0.tgz"
+                },
+                "protype": {
+                  "version": "0.4.0",
+                  "from": "protype@latest",
+                  "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                  "dependencies": {
+                    "cemento": {
+                      "version": "0.3.0",
+                      "from": "cemento@latest",
+                      "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                      "dependencies": {
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    },
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    }
+                  }
+                }
+              }
+            },
+            "falzy": {
+              "version": "0.5.0",
+              "from": "falzy@>=0.5.0 <0.6.0",
+              "resolved": "https://registry.npmjs.org/falzy/-/falzy-0.5.0.tgz",
+              "dependencies": {
+                "protype": {
+                  "version": "0.4.0",
+                  "from": "protype@latest",
+                  "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                  "dependencies": {
+                    "cemento": {
+                      "version": "0.3.0",
+                      "from": "cemento@latest",
+                      "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                      "dependencies": {
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    },
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    }
+                  }
+                }
+              }
+            },
+            "protype": {
+              "version": "0.4.0",
+              "from": "protype@>=0.4.0 <0.5.0",
+              "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+              "dependencies": {
+                "cemento": {
+                  "version": "0.3.0",
+                  "from": "cemento@latest",
+                  "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                  "dependencies": {
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    }
+                  }
+                },
+                "harden": {
+                  "version": "0.7.0",
+                  "from": "harden@latest",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                }
+              }
+            }
+          }
         },
         "harden": {
-          "version": "0.3.5",
+          "version": "0.9.0",
           "from": "harden@latest",
-          "resolved": "https://registry.npmjs.org/harden/-/harden-0.3.5.tgz"
+          "resolved": "https://registry.npmjs.org/harden/-/harden-0.9.0.tgz",
+          "dependencies": {
+            "babel-runtime": {
+              "version": "6.20.0",
+              "from": "babel-runtime@latest",
+              "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz",
+              "dependencies": {
+                "regenerator-runtime": {
+                  "version": "0.10.1",
+                  "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                  "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                }
+              }
+            },
+            "core-js": {
+              "version": "2.4.1",
+              "from": "core-js@>=2.4.0 <3.0.0",
+              "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+            }
+          }
+        },
+        "optall": {
+          "version": "0.2.0",
+          "from": "optall@latest",
+          "resolved": "https://registry.npmjs.org/optall/-/optall-0.2.0.tgz",
+          "dependencies": {
+            "doubt": {
+              "version": "0.4.0",
+              "from": "doubt@latest",
+              "resolved": "https://registry.npmjs.org/doubt/-/doubt-0.4.0.tgz",
+              "dependencies": {
+                "cemento": {
+                  "version": "0.3.0",
+                  "from": "cemento@latest",
+                  "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                  "dependencies": {
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    }
+                  }
+                },
+                "harden": {
+                  "version": "0.7.0",
+                  "from": "harden@latest",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                },
+                "protype": {
+                  "version": "0.4.0",
+                  "from": "protype@latest",
+                  "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                  "dependencies": {
+                    "cemento": {
+                      "version": "0.3.0",
+                      "from": "cemento@latest",
+                      "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                      "dependencies": {
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    },
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    }
+                  }
+                }
+              }
+            },
+            "falze": {
+              "version": "0.2.0",
+              "from": "falze@latest",
+              "resolved": "https://registry.npmjs.org/falze/-/falze-0.2.0.tgz",
+              "dependencies": {
+                "arid": {
+                  "version": "0.3.0",
+                  "from": "arid@>=0.3.0 <0.4.0",
+                  "resolved": "https://registry.npmjs.org/arid/-/arid-0.3.0.tgz",
+                  "dependencies": {
+                    "doubt": {
+                      "version": "0.4.0",
+                      "from": "doubt@latest",
+                      "resolved": "https://registry.npmjs.org/doubt/-/doubt-0.4.0.tgz",
+                      "dependencies": {
+                        "cemento": {
+                          "version": "0.3.0",
+                          "from": "cemento@latest",
+                          "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                          "dependencies": {
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            }
+                          }
+                        },
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        },
+                        "protype": {
+                          "version": "0.4.0",
+                          "from": "protype@latest",
+                          "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                          "dependencies": {
+                            "cemento": {
+                              "version": "0.3.0",
+                              "from": "cemento@latest",
+                              "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                              "dependencies": {
+                                "harden": {
+                                  "version": "0.7.0",
+                                  "from": "harden@latest",
+                                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                                }
+                              }
+                            },
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "truly": {
+                      "version": "0.3.0",
+                      "from": "truly@latest",
+                      "resolved": "https://registry.npmjs.org/truly/-/truly-0.3.0.tgz",
+                      "dependencies": {
+                        "protype": {
+                          "version": "0.4.0",
+                          "from": "protype@latest",
+                          "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                          "dependencies": {
+                            "cemento": {
+                              "version": "0.3.0",
+                              "from": "cemento@latest",
+                              "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                              "dependencies": {
+                                "harden": {
+                                  "version": "0.7.0",
+                                  "from": "harden@latest",
+                                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                                }
+                              }
+                            },
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "doubt": {
+                  "version": "0.4.0",
+                  "from": "doubt@>=0.4.0 <0.5.0",
+                  "resolved": "https://registry.npmjs.org/doubt/-/doubt-0.4.0.tgz",
+                  "dependencies": {
+                    "cemento": {
+                      "version": "0.3.0",
+                      "from": "cemento@latest",
+                      "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                      "dependencies": {
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    },
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    },
+                    "protype": {
+                      "version": "0.4.0",
+                      "from": "protype@latest",
+                      "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                      "dependencies": {
+                        "cemento": {
+                          "version": "0.3.0",
+                          "from": "cemento@latest",
+                          "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                          "dependencies": {
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            }
+                          }
+                        },
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    }
+                  }
+                },
+                "empt": {
+                  "version": "0.2.0",
+                  "from": "empt@>=0.2.0 <0.3.0",
+                  "resolved": "https://registry.npmjs.org/empt/-/empt-0.2.0.tgz",
+                  "dependencies": {
+                    "doubt": {
+                      "version": "0.4.0",
+                      "from": "doubt@latest",
+                      "resolved": "https://registry.npmjs.org/doubt/-/doubt-0.4.0.tgz",
+                      "dependencies": {
+                        "cemento": {
+                          "version": "0.3.0",
+                          "from": "cemento@latest",
+                          "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                          "dependencies": {
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            }
+                          }
+                        },
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        },
+                        "protype": {
+                          "version": "0.4.0",
+                          "from": "protype@latest",
+                          "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                          "dependencies": {
+                            "cemento": {
+                              "version": "0.3.0",
+                              "from": "cemento@latest",
+                              "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                              "dependencies": {
+                                "harden": {
+                                  "version": "0.7.0",
+                                  "from": "harden@latest",
+                                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                                }
+                              }
+                            },
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "kount": {
+                      "version": "0.0.0",
+                      "from": "kount@latest",
+                      "resolved": "https://registry.npmjs.org/kount/-/kount-0.0.0.tgz"
+                    },
+                    "protype": {
+                      "version": "0.4.0",
+                      "from": "protype@latest",
+                      "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                      "dependencies": {
+                        "cemento": {
+                          "version": "0.3.0",
+                          "from": "cemento@latest",
+                          "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                          "dependencies": {
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            }
+                          }
+                        },
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    }
+                  }
+                },
+                "falzy": {
+                  "version": "0.5.0",
+                  "from": "falzy@>=0.5.0 <0.6.0",
+                  "resolved": "https://registry.npmjs.org/falzy/-/falzy-0.5.0.tgz",
+                  "dependencies": {
+                    "protype": {
+                      "version": "0.4.0",
+                      "from": "protype@latest",
+                      "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                      "dependencies": {
+                        "cemento": {
+                          "version": "0.3.0",
+                          "from": "cemento@latest",
+                          "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                          "dependencies": {
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            }
+                          }
+                        },
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    }
+                  }
+                },
+                "protype": {
+                  "version": "0.4.0",
+                  "from": "protype@>=0.4.0 <0.5.0",
+                  "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                  "dependencies": {
+                    "cemento": {
+                      "version": "0.3.0",
+                      "from": "cemento@latest",
+                      "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                      "dependencies": {
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    },
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    }
+                  }
+                }
+              }
+            },
+            "harden": {
+              "version": "0.9.0",
+              "from": "harden@latest",
+              "resolved": "https://registry.npmjs.org/harden/-/harden-0.9.0.tgz",
+              "dependencies": {
+                "babel-runtime": {
+                  "version": "6.20.0",
+                  "from": "babel-runtime@latest",
+                  "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz",
+                  "dependencies": {
+                    "regenerator-runtime": {
+                      "version": "0.10.1",
+                      "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                      "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                    }
+                  }
+                },
+                "core-js": {
+                  "version": "2.4.1",
+                  "from": "core-js@>=2.4.0 <3.0.0",
+                  "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                }
+              }
+            },
+            "protype": {
+              "version": "0.4.0",
+              "from": "protype@latest",
+              "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+              "dependencies": {
+                "cemento": {
+                  "version": "0.3.0",
+                  "from": "cemento@latest",
+                  "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                  "dependencies": {
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    }
+                  }
+                },
+                "harden": {
+                  "version": "0.7.0",
+                  "from": "harden@latest",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                }
+              }
+            },
+            "pyck": {
+              "version": "0.4.0",
+              "from": "pyck@latest",
+              "resolved": "https://registry.npmjs.org/pyck/-/pyck-0.4.0.tgz",
+              "dependencies": {
+                "doubt": {
+                  "version": "0.4.0",
+                  "from": "doubt@latest",
+                  "resolved": "https://registry.npmjs.org/doubt/-/doubt-0.4.0.tgz",
+                  "dependencies": {
+                    "cemento": {
+                      "version": "0.3.0",
+                      "from": "cemento@latest",
+                      "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                      "dependencies": {
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    },
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    },
+                    "protype": {
+                      "version": "0.4.0",
+                      "from": "protype@latest",
+                      "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                      "dependencies": {
+                        "cemento": {
+                          "version": "0.3.0",
+                          "from": "cemento@latest",
+                          "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                          "dependencies": {
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            }
+                          }
+                        },
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    }
+                  }
+                },
+                "falze": {
+                  "version": "0.2.0",
+                  "from": "falze@latest",
+                  "resolved": "https://registry.npmjs.org/falze/-/falze-0.2.0.tgz",
+                  "dependencies": {
+                    "arid": {
+                      "version": "0.3.0",
+                      "from": "arid@>=0.3.0 <0.4.0",
+                      "resolved": "https://registry.npmjs.org/arid/-/arid-0.3.0.tgz",
+                      "dependencies": {
+                        "doubt": {
+                          "version": "0.4.0",
+                          "from": "doubt@latest",
+                          "resolved": "https://registry.npmjs.org/doubt/-/doubt-0.4.0.tgz",
+                          "dependencies": {
+                            "cemento": {
+                              "version": "0.3.0",
+                              "from": "cemento@latest",
+                              "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                              "dependencies": {
+                                "harden": {
+                                  "version": "0.7.0",
+                                  "from": "harden@latest",
+                                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                                }
+                              }
+                            },
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            },
+                            "protype": {
+                              "version": "0.4.0",
+                              "from": "protype@latest",
+                              "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                              "dependencies": {
+                                "cemento": {
+                                  "version": "0.3.0",
+                                  "from": "cemento@latest",
+                                  "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                                  "dependencies": {
+                                    "harden": {
+                                      "version": "0.7.0",
+                                      "from": "harden@latest",
+                                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                                    }
+                                  }
+                                },
+                                "harden": {
+                                  "version": "0.7.0",
+                                  "from": "harden@latest",
+                                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "truly": {
+                          "version": "0.3.0",
+                          "from": "truly@latest",
+                          "resolved": "https://registry.npmjs.org/truly/-/truly-0.3.0.tgz",
+                          "dependencies": {
+                            "protype": {
+                              "version": "0.4.0",
+                              "from": "protype@latest",
+                              "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                              "dependencies": {
+                                "cemento": {
+                                  "version": "0.3.0",
+                                  "from": "cemento@latest",
+                                  "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                                  "dependencies": {
+                                    "harden": {
+                                      "version": "0.7.0",
+                                      "from": "harden@latest",
+                                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                                    }
+                                  }
+                                },
+                                "harden": {
+                                  "version": "0.7.0",
+                                  "from": "harden@latest",
+                                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "doubt": {
+                      "version": "0.4.0",
+                      "from": "doubt@>=0.4.0 <0.5.0",
+                      "resolved": "https://registry.npmjs.org/doubt/-/doubt-0.4.0.tgz",
+                      "dependencies": {
+                        "cemento": {
+                          "version": "0.3.0",
+                          "from": "cemento@latest",
+                          "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                          "dependencies": {
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            }
+                          }
+                        },
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        },
+                        "protype": {
+                          "version": "0.4.0",
+                          "from": "protype@latest",
+                          "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                          "dependencies": {
+                            "cemento": {
+                              "version": "0.3.0",
+                              "from": "cemento@latest",
+                              "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                              "dependencies": {
+                                "harden": {
+                                  "version": "0.7.0",
+                                  "from": "harden@latest",
+                                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                                }
+                              }
+                            },
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "empt": {
+                      "version": "0.2.0",
+                      "from": "empt@>=0.2.0 <0.3.0",
+                      "resolved": "https://registry.npmjs.org/empt/-/empt-0.2.0.tgz",
+                      "dependencies": {
+                        "doubt": {
+                          "version": "0.4.0",
+                          "from": "doubt@latest",
+                          "resolved": "https://registry.npmjs.org/doubt/-/doubt-0.4.0.tgz",
+                          "dependencies": {
+                            "cemento": {
+                              "version": "0.3.0",
+                              "from": "cemento@latest",
+                              "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                              "dependencies": {
+                                "harden": {
+                                  "version": "0.7.0",
+                                  "from": "harden@latest",
+                                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                                }
+                              }
+                            },
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            },
+                            "protype": {
+                              "version": "0.4.0",
+                              "from": "protype@latest",
+                              "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                              "dependencies": {
+                                "cemento": {
+                                  "version": "0.3.0",
+                                  "from": "cemento@latest",
+                                  "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                                  "dependencies": {
+                                    "harden": {
+                                      "version": "0.7.0",
+                                      "from": "harden@latest",
+                                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                                    }
+                                  }
+                                },
+                                "harden": {
+                                  "version": "0.7.0",
+                                  "from": "harden@latest",
+                                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "kount": {
+                          "version": "0.0.0",
+                          "from": "kount@latest",
+                          "resolved": "https://registry.npmjs.org/kount/-/kount-0.0.0.tgz"
+                        },
+                        "protype": {
+                          "version": "0.4.0",
+                          "from": "protype@latest",
+                          "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                          "dependencies": {
+                            "cemento": {
+                              "version": "0.3.0",
+                              "from": "cemento@latest",
+                              "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                              "dependencies": {
+                                "harden": {
+                                  "version": "0.7.0",
+                                  "from": "harden@latest",
+                                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                                }
+                              }
+                            },
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "falzy": {
+                      "version": "0.5.0",
+                      "from": "falzy@>=0.5.0 <0.6.0",
+                      "resolved": "https://registry.npmjs.org/falzy/-/falzy-0.5.0.tgz",
+                      "dependencies": {
+                        "protype": {
+                          "version": "0.4.0",
+                          "from": "protype@latest",
+                          "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                          "dependencies": {
+                            "cemento": {
+                              "version": "0.3.0",
+                              "from": "cemento@latest",
+                              "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                              "dependencies": {
+                                "harden": {
+                                  "version": "0.7.0",
+                                  "from": "harden@latest",
+                                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                                }
+                              }
+                            },
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "protype": {
+                      "version": "0.4.0",
+                      "from": "protype@>=0.4.0 <0.5.0",
+                      "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                      "dependencies": {
+                        "cemento": {
+                          "version": "0.3.0",
+                          "from": "cemento@latest",
+                          "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                          "dependencies": {
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            }
+                          }
+                        },
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    }
+                  }
+                },
+                "falzy": {
+                  "version": "0.5.0",
+                  "from": "falzy@latest",
+                  "resolved": "https://registry.npmjs.org/falzy/-/falzy-0.5.0.tgz",
+                  "dependencies": {
+                    "protype": {
+                      "version": "0.4.0",
+                      "from": "protype@latest",
+                      "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                      "dependencies": {
+                        "cemento": {
+                          "version": "0.3.0",
+                          "from": "cemento@latest",
+                          "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                          "dependencies": {
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            }
+                          }
+                        },
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    }
+                  }
+                },
+                "harden": {
+                  "version": "0.9.0",
+                  "from": "harden@latest",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.9.0.tgz",
+                  "dependencies": {
+                    "babel-runtime": {
+                      "version": "6.20.0",
+                      "from": "babel-runtime@latest",
+                      "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz",
+                      "dependencies": {
+                        "regenerator-runtime": {
+                          "version": "0.10.1",
+                          "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                          "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                        }
+                      }
+                    },
+                    "core-js": {
+                      "version": "2.4.1",
+                      "from": "core-js@>=2.4.0 <3.0.0",
+                      "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                    }
+                  }
+                },
+                "protype": {
+                  "version": "0.4.0",
+                  "from": "protype@latest",
+                  "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                  "dependencies": {
+                    "cemento": {
+                      "version": "0.3.0",
+                      "from": "cemento@latest",
+                      "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                      "dependencies": {
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    },
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    }
+                  }
+                },
+                "raze": {
+                  "version": "0.5.0",
+                  "from": "raze@latest",
+                  "resolved": "https://registry.npmjs.org/raze/-/raze-0.5.0.tgz",
+                  "dependencies": {
+                    "doubt": {
+                      "version": "0.4.0",
+                      "from": "doubt@latest",
+                      "resolved": "https://registry.npmjs.org/doubt/-/doubt-0.4.0.tgz",
+                      "dependencies": {
+                        "cemento": {
+                          "version": "0.3.0",
+                          "from": "cemento@latest",
+                          "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                          "dependencies": {
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            }
+                          }
+                        },
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        },
+                        "protype": {
+                          "version": "0.4.0",
+                          "from": "protype@latest",
+                          "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                          "dependencies": {
+                            "cemento": {
+                              "version": "0.3.0",
+                              "from": "cemento@latest",
+                              "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                              "dependencies": {
+                                "harden": {
+                                  "version": "0.7.0",
+                                  "from": "harden@latest",
+                                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                                }
+                              }
+                            },
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    }
+                  }
+                },
+                "truu": {
+                  "version": "0.3.0",
+                  "from": "truu@latest",
+                  "resolved": "https://registry.npmjs.org/truu/-/truu-0.3.0.tgz",
+                  "dependencies": {
+                    "doubt": {
+                      "version": "0.4.0",
+                      "from": "doubt@>=0.4.0 <0.5.0",
+                      "resolved": "https://registry.npmjs.org/doubt/-/doubt-0.4.0.tgz",
+                      "dependencies": {
+                        "cemento": {
+                          "version": "0.3.0",
+                          "from": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                          "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                          "dependencies": {
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            }
+                          }
+                        },
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        },
+                        "protype": {
+                          "version": "0.4.0",
+                          "from": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                          "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                          "dependencies": {
+                            "cemento": {
+                              "version": "0.3.0",
+                              "from": "cemento@latest",
+                              "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                              "dependencies": {
+                                "harden": {
+                                  "version": "0.7.0",
+                                  "from": "harden@latest",
+                                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                                }
+                              }
+                            },
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "filled": {
+                      "version": "0.2.0",
+                      "from": "filled@0.2.0",
+                      "resolved": "https://registry.npmjs.org/filled/-/filled-0.2.0.tgz",
+                      "dependencies": {
+                        "doubt": {
+                          "version": "0.4.0",
+                          "from": "doubt@latest",
+                          "resolved": "https://registry.npmjs.org/doubt/-/doubt-0.4.0.tgz",
+                          "dependencies": {
+                            "cemento": {
+                              "version": "0.3.0",
+                              "from": "cemento@latest",
+                              "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                              "dependencies": {
+                                "harden": {
+                                  "version": "0.7.0",
+                                  "from": "harden@latest",
+                                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                                }
+                              }
+                            },
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            },
+                            "protype": {
+                              "version": "0.4.0",
+                              "from": "protype@latest",
+                              "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                              "dependencies": {
+                                "cemento": {
+                                  "version": "0.3.0",
+                                  "from": "cemento@latest",
+                                  "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                                  "dependencies": {
+                                    "harden": {
+                                      "version": "0.7.0",
+                                      "from": "harden@latest",
+                                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                                    }
+                                  }
+                                },
+                                "harden": {
+                                  "version": "0.7.0",
+                                  "from": "harden@latest",
+                                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "raze": {
+                          "version": "0.5.0",
+                          "from": "https://registry.npmjs.org/raze/-/raze-0.5.0.tgz",
+                          "resolved": "https://registry.npmjs.org/raze/-/raze-0.5.0.tgz",
+                          "dependencies": {
+                            "doubt": {
+                              "version": "0.4.0",
+                              "from": "doubt@latest",
+                              "resolved": "https://registry.npmjs.org/doubt/-/doubt-0.4.0.tgz",
+                              "dependencies": {
+                                "cemento": {
+                                  "version": "0.3.0",
+                                  "from": "cemento@latest",
+                                  "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                                  "dependencies": {
+                                    "harden": {
+                                      "version": "0.7.0",
+                                      "from": "harden@latest",
+                                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                                    }
+                                  }
+                                },
+                                "harden": {
+                                  "version": "0.7.0",
+                                  "from": "harden@latest",
+                                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                                },
+                                "protype": {
+                                  "version": "0.4.0",
+                                  "from": "protype@latest",
+                                  "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                                  "dependencies": {
+                                    "cemento": {
+                                      "version": "0.3.0",
+                                      "from": "cemento@latest",
+                                      "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                                      "dependencies": {
+                                        "harden": {
+                                          "version": "0.7.0",
+                                          "from": "harden@latest",
+                                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                                        }
+                                      }
+                                    },
+                                    "harden": {
+                                      "version": "0.7.0",
+                                      "from": "harden@latest",
+                                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            }
+                          }
+                        },
+                        "truly": {
+                          "version": "0.3.0",
+                          "from": "truly@latest",
+                          "resolved": "https://registry.npmjs.org/truly/-/truly-0.3.0.tgz",
+                          "dependencies": {
+                            "protype": {
+                              "version": "0.4.0",
+                              "from": "protype@latest",
+                              "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                              "dependencies": {
+                                "cemento": {
+                                  "version": "0.3.0",
+                                  "from": "cemento@latest",
+                                  "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                                  "dependencies": {
+                                    "harden": {
+                                      "version": "0.7.0",
+                                      "from": "harden@latest",
+                                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                                    }
+                                  }
+                                },
+                                "harden": {
+                                  "version": "0.7.0",
+                                  "from": "harden@latest",
+                                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "protype": {
+                      "version": "0.4.0",
+                      "from": "protype@>=0.4.0 <0.5.0",
+                      "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                      "dependencies": {
+                        "cemento": {
+                          "version": "0.3.0",
+                          "from": "cemento@latest",
+                          "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                          "dependencies": {
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            }
+                          }
+                        },
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    },
+                    "stuffed": {
+                      "version": "0.1.0",
+                      "from": "stuffed@>=0.1.0 <0.2.0",
+                      "resolved": "https://registry.npmjs.org/stuffed/-/stuffed-0.1.0.tgz",
+                      "dependencies": {
+                        "doubt": {
+                          "version": "0.4.0",
+                          "from": "doubt@latest",
+                          "resolved": "https://registry.npmjs.org/doubt/-/doubt-0.4.0.tgz",
+                          "dependencies": {
+                            "cemento": {
+                              "version": "0.3.0",
+                              "from": "cemento@latest",
+                              "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                              "dependencies": {
+                                "harden": {
+                                  "version": "0.7.0",
+                                  "from": "harden@latest",
+                                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                                }
+                              }
+                            },
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            },
+                            "protype": {
+                              "version": "0.4.0",
+                              "from": "protype@latest",
+                              "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                              "dependencies": {
+                                "cemento": {
+                                  "version": "0.3.0",
+                                  "from": "cemento@latest",
+                                  "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                                  "dependencies": {
+                                    "harden": {
+                                      "version": "0.7.0",
+                                      "from": "harden@latest",
+                                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                                    }
+                                  }
+                                },
+                                "harden": {
+                                  "version": "0.7.0",
+                                  "from": "harden@latest",
+                                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "kount": {
+                          "version": "0.0.0",
+                          "from": "https://registry.npmjs.org/kount/-/kount-0.0.0.tgz",
+                          "resolved": "https://registry.npmjs.org/kount/-/kount-0.0.0.tgz"
+                        },
+                        "protype": {
+                          "version": "0.4.0",
+                          "from": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                          "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                          "dependencies": {
+                            "cemento": {
+                              "version": "0.3.0",
+                              "from": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                              "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                              "dependencies": {
+                                "harden": {
+                                  "version": "0.7.0",
+                                  "from": "harden@latest",
+                                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                                }
+                              }
+                            },
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            }
+                          }
+                        },
+                        "truly": {
+                          "version": "0.3.0",
+                          "from": "truly@latest",
+                          "resolved": "https://registry.npmjs.org/truly/-/truly-0.3.0.tgz",
+                          "dependencies": {
+                            "protype": {
+                              "version": "0.4.0",
+                              "from": "protype@latest",
+                              "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                              "dependencies": {
+                                "cemento": {
+                                  "version": "0.3.0",
+                                  "from": "cemento@latest",
+                                  "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                                  "dependencies": {
+                                    "harden": {
+                                      "version": "0.7.0",
+                                      "from": "harden@latest",
+                                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                                    }
+                                  }
+                                },
+                                "harden": {
+                                  "version": "0.7.0",
+                                  "from": "harden@latest",
+                                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "truly": {
+                      "version": "0.3.0",
+                      "from": "truly@>=0.3.0 <0.4.0",
+                      "resolved": "https://registry.npmjs.org/truly/-/truly-0.3.0.tgz",
+                      "dependencies": {
+                        "protype": {
+                          "version": "0.4.0",
+                          "from": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                          "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                          "dependencies": {
+                            "cemento": {
+                              "version": "0.3.0",
+                              "from": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                              "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                              "dependencies": {
+                                "harden": {
+                                  "version": "0.7.0",
+                                  "from": "harden@latest",
+                                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                                }
+                              }
+                            },
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "zelf": {
+                  "version": "0.3.0",
+                  "from": "zelf@latest",
+                  "resolved": "https://registry.npmjs.org/zelf/-/zelf-0.3.0.tgz",
+                  "dependencies": {
+                    "asea": {
+                      "version": "0.4.0",
+                      "from": "asea@latest",
+                      "resolved": "https://registry.npmjs.org/asea/-/asea-0.4.0.tgz",
+                      "dependencies": {
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "zelf": {
+              "version": "0.3.0",
+              "from": "zelf@latest",
+              "resolved": "https://registry.npmjs.org/zelf/-/zelf-0.3.0.tgz",
+              "dependencies": {
+                "asea": {
+                  "version": "0.4.0",
+                  "from": "asea@latest",
+                  "resolved": "https://registry.npmjs.org/asea/-/asea-0.4.0.tgz",
+                  "dependencies": {
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "protype": {
+          "version": "0.4.0",
+          "from": "protype@latest",
+          "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+          "dependencies": {
+            "cemento": {
+              "version": "0.3.0",
+              "from": "cemento@latest",
+              "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+              "dependencies": {
+                "harden": {
+                  "version": "0.7.0",
+                  "from": "harden@latest",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                }
+              }
+            },
+            "harden": {
+              "version": "0.7.0",
+              "from": "harden@latest",
+              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+            }
+          }
+        },
+        "zelf": {
+          "version": "0.3.0",
+          "from": "zelf@latest",
+          "resolved": "https://registry.npmjs.org/zelf/-/zelf-0.3.0.tgz",
+          "dependencies": {
+            "asea": {
+              "version": "0.4.0",
+              "from": "asea@latest",
+              "resolved": "https://registry.npmjs.org/asea/-/asea-0.4.0.tgz",
+              "dependencies": {
+                "harden": {
+                  "version": "0.7.0",
+                  "from": "harden@latest",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "plough": {
+      "version": "0.3.0",
+      "from": "plough@latest",
+      "resolved": "https://registry.npmjs.org/plough/-/plough-0.3.0.tgz",
+      "dependencies": {
+        "arid": {
+          "version": "0.3.0",
+          "from": "arid@latest",
+          "resolved": "https://registry.npmjs.org/arid/-/arid-0.3.0.tgz",
+          "dependencies": {
+            "doubt": {
+              "version": "0.4.0",
+              "from": "doubt@latest",
+              "resolved": "https://registry.npmjs.org/doubt/-/doubt-0.4.0.tgz",
+              "dependencies": {
+                "cemento": {
+                  "version": "0.3.0",
+                  "from": "cemento@latest",
+                  "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                  "dependencies": {
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    }
+                  }
+                },
+                "harden": {
+                  "version": "0.7.0",
+                  "from": "harden@latest",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                },
+                "protype": {
+                  "version": "0.4.0",
+                  "from": "protype@latest",
+                  "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                  "dependencies": {
+                    "cemento": {
+                      "version": "0.3.0",
+                      "from": "cemento@latest",
+                      "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                      "dependencies": {
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    },
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    }
+                  }
+                }
+              }
+            },
+            "truly": {
+              "version": "0.3.0",
+              "from": "truly@latest",
+              "resolved": "https://registry.npmjs.org/truly/-/truly-0.3.0.tgz",
+              "dependencies": {
+                "protype": {
+                  "version": "0.4.0",
+                  "from": "protype@latest",
+                  "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                  "dependencies": {
+                    "cemento": {
+                      "version": "0.3.0",
+                      "from": "cemento@latest",
+                      "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                      "dependencies": {
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    },
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "decrease": {
+          "version": "0.3.0",
+          "from": "decrease@latest",
+          "resolved": "https://registry.npmjs.org/decrease/-/decrease-0.3.0.tgz",
+          "dependencies": {
+            "doubt": {
+              "version": "0.4.0",
+              "from": "doubt@latest",
+              "resolved": "https://registry.npmjs.org/doubt/-/doubt-0.4.0.tgz",
+              "dependencies": {
+                "cemento": {
+                  "version": "0.3.0",
+                  "from": "cemento@latest",
+                  "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                  "dependencies": {
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    }
+                  }
+                },
+                "harden": {
+                  "version": "0.7.0",
+                  "from": "harden@latest",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                },
+                "protype": {
+                  "version": "0.4.0",
+                  "from": "protype@latest",
+                  "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                  "dependencies": {
+                    "cemento": {
+                      "version": "0.3.0",
+                      "from": "cemento@latest",
+                      "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                      "dependencies": {
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    },
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    }
+                  }
+                }
+              }
+            },
+            "harden": {
+              "version": "0.9.0",
+              "from": "harden@latest",
+              "resolved": "https://registry.npmjs.org/harden/-/harden-0.9.0.tgz",
+              "dependencies": {
+                "babel-runtime": {
+                  "version": "6.20.0",
+                  "from": "babel-runtime@latest",
+                  "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz",
+                  "dependencies": {
+                    "regenerator-runtime": {
+                      "version": "0.10.1",
+                      "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                      "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                    }
+                  }
+                },
+                "core-js": {
+                  "version": "2.4.1",
+                  "from": "core-js@>=2.4.0 <3.0.0",
+                  "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+                }
+              }
+            },
+            "protype": {
+              "version": "0.4.0",
+              "from": "protype@latest",
+              "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+              "dependencies": {
+                "cemento": {
+                  "version": "0.3.0",
+                  "from": "cemento@latest",
+                  "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                  "dependencies": {
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    }
+                  }
+                },
+                "harden": {
+                  "version": "0.7.0",
+                  "from": "harden@latest",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                }
+              }
+            },
+            "raze": {
+              "version": "0.5.0",
+              "from": "raze@latest",
+              "resolved": "https://registry.npmjs.org/raze/-/raze-0.5.0.tgz",
+              "dependencies": {
+                "doubt": {
+                  "version": "0.4.0",
+                  "from": "doubt@latest",
+                  "resolved": "https://registry.npmjs.org/doubt/-/doubt-0.4.0.tgz",
+                  "dependencies": {
+                    "cemento": {
+                      "version": "0.3.0",
+                      "from": "cemento@latest",
+                      "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                      "dependencies": {
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    },
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    },
+                    "protype": {
+                      "version": "0.4.0",
+                      "from": "protype@latest",
+                      "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                      "dependencies": {
+                        "cemento": {
+                          "version": "0.3.0",
+                          "from": "cemento@latest",
+                          "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                          "dependencies": {
+                            "harden": {
+                              "version": "0.7.0",
+                              "from": "harden@latest",
+                              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                            }
+                          }
+                        },
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    }
+                  }
+                },
+                "harden": {
+                  "version": "0.7.0",
+                  "from": "harden@latest",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                }
+              }
+            },
+            "truly": {
+              "version": "0.3.0",
+              "from": "truly@latest",
+              "resolved": "https://registry.npmjs.org/truly/-/truly-0.3.0.tgz",
+              "dependencies": {
+                "protype": {
+                  "version": "0.4.0",
+                  "from": "protype@latest",
+                  "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                  "dependencies": {
+                    "cemento": {
+                      "version": "0.3.0",
+                      "from": "cemento@latest",
+                      "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                      "dependencies": {
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    },
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "doubt": {
+          "version": "0.4.0",
+          "from": "doubt@latest",
+          "resolved": "https://registry.npmjs.org/doubt/-/doubt-0.4.0.tgz",
+          "dependencies": {
+            "cemento": {
+              "version": "0.3.0",
+              "from": "cemento@latest",
+              "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+              "dependencies": {
+                "harden": {
+                  "version": "0.7.0",
+                  "from": "harden@latest",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                }
+              }
+            },
+            "harden": {
+              "version": "0.7.0",
+              "from": "harden@latest",
+              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+            },
+            "protype": {
+              "version": "0.4.0",
+              "from": "protype@latest",
+              "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+              "dependencies": {
+                "cemento": {
+                  "version": "0.3.0",
+                  "from": "cemento@latest",
+                  "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                  "dependencies": {
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    }
+                  }
+                },
+                "harden": {
+                  "version": "0.7.0",
+                  "from": "harden@latest",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                }
+              }
+            }
+          }
+        },
+        "harden": {
+          "version": "0.9.0",
+          "from": "harden@latest",
+          "resolved": "https://registry.npmjs.org/harden/-/harden-0.9.0.tgz",
+          "dependencies": {
+            "babel-runtime": {
+              "version": "6.20.0",
+              "from": "babel-runtime@latest",
+              "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz",
+              "dependencies": {
+                "regenerator-runtime": {
+                  "version": "0.10.1",
+                  "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+                  "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.1.tgz"
+                }
+              }
+            },
+            "core-js": {
+              "version": "2.4.1",
+              "from": "core-js@>=2.4.0 <3.0.0",
+              "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
+            }
+          }
         },
         "raze": {
-          "version": "0.0.8",
+          "version": "0.5.0",
           "from": "raze@latest",
-          "resolved": "https://registry.npmjs.org/raze/-/raze-0.0.8.tgz"
+          "resolved": "https://registry.npmjs.org/raze/-/raze-0.5.0.tgz",
+          "dependencies": {
+            "doubt": {
+              "version": "0.4.0",
+              "from": "doubt@latest",
+              "resolved": "https://registry.npmjs.org/doubt/-/doubt-0.4.0.tgz",
+              "dependencies": {
+                "cemento": {
+                  "version": "0.3.0",
+                  "from": "cemento@latest",
+                  "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                  "dependencies": {
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    }
+                  }
+                },
+                "harden": {
+                  "version": "0.7.0",
+                  "from": "harden@latest",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                },
+                "protype": {
+                  "version": "0.4.0",
+                  "from": "protype@latest",
+                  "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+                  "dependencies": {
+                    "cemento": {
+                      "version": "0.3.0",
+                      "from": "cemento@latest",
+                      "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+                      "dependencies": {
+                        "harden": {
+                          "version": "0.7.0",
+                          "from": "harden@latest",
+                          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                        }
+                      }
+                    },
+                    "harden": {
+                      "version": "0.7.0",
+                      "from": "harden@latest",
+                      "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                    }
+                  }
+                }
+              }
+            },
+            "harden": {
+              "version": "0.7.0",
+              "from": "harden@latest",
+              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+            }
+          }
         }
       }
     },
-    "raze": {
-      "version": "0.0.8",
-      "from": "raze@0.0.8",
-      "resolved": "https://registry.npmjs.org/raze/-/raze-0.0.8.tgz"
-    },
-    "repeat-string": {
-      "version": "1.6.1",
-      "from": "repeat-string@>=1.5.2 <2.0.0",
-      "resolved": "https://registry.npmjs.org/repeat-string/-/repeat-string-1.6.1.tgz"
-    },
-    "right-align": {
-      "version": "0.1.3",
-      "from": "right-align@>=0.1.1 <0.2.0",
-      "resolved": "https://registry.npmjs.org/right-align/-/right-align-0.1.3.tgz",
-      "optional": true
-    },
-    "source-map": {
-      "version": "0.4.4",
-      "from": "source-map@>=0.4.4 <0.5.0",
-      "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.4.4.tgz"
-    },
-    "titlelize": {
-      "version": "0.2.1",
-      "from": "titlelize@>=0.2.1 <0.3.0",
-      "resolved": "https://registry.npmjs.org/titlelize/-/titlelize-0.2.1.tgz"
+    "protype": {
+      "version": "0.4.0",
+      "from": "protype@latest",
+      "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+      "dependencies": {
+        "cemento": {
+          "version": "0.3.0",
+          "from": "cemento@latest",
+          "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+          "dependencies": {
+            "harden": {
+              "version": "0.7.0",
+              "from": "harden@latest",
+              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+            }
+          }
+        },
+        "harden": {
+          "version": "0.7.0",
+          "from": "harden@latest",
+          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+        }
+      }
     },
     "truly": {
-      "version": "0.0.1",
+      "version": "0.3.0",
       "from": "truly@latest",
-      "resolved": "https://registry.npmjs.org/truly/-/truly-0.0.1.tgz"
-    },
-    "uglify-js": {
-      "version": "2.7.4",
-      "from": "uglify-js@>=2.6.0 <3.0.0",
-      "resolved": "https://registry.npmjs.org/uglify-js/-/uglify-js-2.7.4.tgz",
-      "optional": true,
+      "resolved": "https://registry.npmjs.org/truly/-/truly-0.3.0.tgz",
       "dependencies": {
-        "async": {
-          "version": "0.2.10",
-          "from": "async@>=0.2.6 <0.3.0",
-          "resolved": "https://registry.npmjs.org/async/-/async-0.2.10.tgz",
-          "optional": true
-        },
-        "source-map": {
-          "version": "0.5.6",
-          "from": "source-map@>=0.5.1 <0.6.0",
-          "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.5.6.tgz",
-          "optional": true
+        "protype": {
+          "version": "0.4.0",
+          "from": "protype@latest",
+          "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+          "dependencies": {
+            "cemento": {
+              "version": "0.3.0",
+              "from": "cemento@latest",
+              "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+              "dependencies": {
+                "harden": {
+                  "version": "0.7.0",
+                  "from": "harden@latest",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                }
+              }
+            },
+            "harden": {
+              "version": "0.7.0",
+              "from": "harden@latest",
+              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+            }
+          }
         }
       }
-    },
-    "uglify-to-browserify": {
-      "version": "1.0.2",
-      "from": "uglify-to-browserify@>=1.0.0 <1.1.0",
-      "resolved": "https://registry.npmjs.org/uglify-to-browserify/-/uglify-to-browserify-1.0.2.tgz",
-      "optional": true
-    },
-    "window-size": {
-      "version": "0.1.0",
-      "from": "window-size@0.1.0",
-      "resolved": "https://registry.npmjs.org/window-size/-/window-size-0.1.0.tgz",
-      "optional": true
-    },
-    "wordwrap": {
-      "version": "0.0.3",
-      "from": "wordwrap@>=0.0.2 <0.1.0",
-      "resolved": "https://registry.npmjs.org/wordwrap/-/wordwrap-0.0.3.tgz"
-    },
-    "yargs": {
-      "version": "3.10.0",
-      "from": "yargs@>=3.10.0 <3.11.0",
-      "resolved": "https://registry.npmjs.org/yargs/-/yargs-3.10.0.tgz",
-      "optional": true
-    },
-    "zelf": {
-      "version": "0.0.4",
-      "from": "zelf@0.0.4",
-      "resolved": "https://registry.npmjs.org/zelf/-/zelf-0.0.4.tgz"
     }
   }
 }

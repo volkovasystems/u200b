@@ -55,57 +55,21 @@
 			"harden": "harden",
 			"optfor": "optfor",
 			"plough": "plough",
+			"protype": "protype",
 			"truly": "truly"
 		}
 	@end-include
 */
 
-if( typeof window == "undefined" ){
-	var arid = require( "arid" );
-	var diatom = require( "diatom" );
-	var harden = require( "harden" );
-	var optfor = require( "optfor" );
-	var plough = require( "plough" );
-	var truly = require( "truly" );
-}
+const arid = require( "arid" );
+const diatom = require( "diatom" );
+const harden = require( "harden" );
+const optfor = require( "optfor" );
+const plough = require( "plough" );
+const protype = require( "protype" );
+const truly = require( "truly" );
 
-if( typeof window != "undefined" &&
-	!( "arid" in window ) )
-{
-	throw new Error( "arid is not defined" );
-}
-
-if( typeof window != "undefined" &&
-	!( "diatom" in window ) )
-{
-	throw new Error( "diatom is not defined" );
-}
-
-if( typeof window != "undefined" &&
-	!( "harden" in window ) )
-{
-	throw new Error( "harden is not defined" );
-}
-
-if( typeof window != "undefined" &&
-	!( "optfor" in window ) )
-{
-	throw new Error( "optfor is not defined" );
-}
-
-if( typeof window != "undefined" &&
-	!( "plough" in window ) )
-{
-	throw new Error( "plough is not defined" );
-}
-
-if( typeof window != "undefined" &&
-	!( "truly" in window ) )
-{
-	throw new Error( "truly is not defined" );
-}
-
-var U200b = diatom( "U200b" );
+const U200b = diatom( "U200b" );
 
 harden( "U200B", "\u200b" );
 harden( "U200B_BASE16", "ffffffff0000200bffffffff" );
@@ -127,12 +91,8 @@ U200b.prototype.initialize = function initialize( string ){
 	*/
 
 	let text = plough( arguments )
-		.map( function onEachParameter( parameter ){
-			return parameter.toString( );
-		} )
-		.filter( function onEachParameter( parameter ){
-			return ( truly( parameter ) && typeof parameter == STRING );
-		} );
+		.map( ( parameter ) => { return parameter.toString( ); } )
+		.filter( truly );
 
 	//: This will handle the modification done to the strings.
 	this.history = this.history || [ ];
@@ -250,12 +210,8 @@ U200b.prototype.append = function append( string ){
 	*/
 
 	let text = plough( arguments )
-		.map( function onEachParameter( parameter ){
-			return parameter.toString( );
-		} )
-		.filter( function onEachParameter( parameter ){
-			return ( truly( parameter ) && typeof parameter == STRING );
-		} ) || [ ];
+		.map( ( parameter ) => { return parameter.toString( ); } )
+		.filter( truly ) || [ ];
 
 	this.string = this.string
 		.concat( text )
@@ -290,12 +246,8 @@ U200b.prototype.prepend = function prepend( string ){
 	*/
 
 	let text = plough( arguments )
-		.map( function onEachParameter( parameter ){
-			return parameter.toString( );
-		} )
-		.filter( function onEachParameter( parameter ){
-			return ( truly( parameter ) && typeof parameter == STRING );
-		} ) || [ ];
+		.map( ( parameter ) => { return parameter.toString( ); } )
+		.filter( truly ) || [ ];
 
 	this.string = text
 		.concat( this.string )
@@ -341,9 +293,7 @@ U200b.prototype.insert = function insert( string, pattern ){
 
 			return parameter.toString( );
 		} )
-		.filter( function onEachParameter( parameter ){
-			return ( truly( parameter ) && typeof parameter == STRING );
-		} ) || [ ];
+		.filter( truly ) || [ ];
 
 	let template = optfor( arguments, RegExp );
 
@@ -384,6 +334,4 @@ U200b.prototype.clear = function clear( ){
 	return this;
 };
 
-if( typeof module != "undefined" ){
-	module.exports = U200b;
-}
+module.exports = U200b;
