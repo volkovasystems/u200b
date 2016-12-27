@@ -1,10 +1,13 @@
 {
   "name": "u200b",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Append, prepend, and insert zero-width space to string.",
   "main": "u200b.js",
+  "support": "u200b.support.js",
+  "deploy": "u200b.deploy.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel u200b.js -o u200b.support.js && webpack",
+    "test": "mocha u200b-test.js"
   },
   "repository": {
     "type": "git",
@@ -16,18 +19,30 @@
     "space-separator"
   ],
   "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "contributors": [
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/volkovasystems/u200b/issues"
   },
   "homepage": "https://github.com/volkovasystems/u200b#readme",
   "dependencies": {
-    "arid": "^0.3.0",
-    "diatom": "^0.3.0",
-    "harden": "^0.9.0",
-    "optfor": "^0.5.0",
-    "plough": "^0.3.0",
-    "protype": "^0.4.0",
-    "truly": "^0.3.0"
+    "arid": "^0.4.0",
+    "clazof": "^0.1.0",
+    "diatom": "^0.4.0",
+    "harden": "^0.12.0",
+    "optfor": "^0.6.0",
+    "plough": "^0.5.0",
+    "protype": "^0.7.0",
+    "truly": "^0.5.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-latest": "^6.16.0",
+    "source-map-loader": "^0.1.5",
+    "webpack": "^1.14.0"
   }
 }
