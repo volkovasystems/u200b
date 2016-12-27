@@ -34,6 +34,9 @@
 			"file": "u200b.js",
 			"module": "u200b",
 			"author": "Richeve S. Bebedor",
+			"contributors": [
+				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+			],
 			"eMail": "richeve.bebedor@gmail.com",
 			"repository": "https://github.com/volkovasystems/u200b.git",
 			"global": true,
@@ -62,6 +65,7 @@
 */
 
 const arid = require( "arid" );
+const clazof = require( "clazof" );
 const diatom = require( "diatom" );
 const harden = require( "harden" );
 const optfor = require( "optfor" );
@@ -287,7 +291,7 @@ U200b.prototype.insert = function insert( string, pattern ){
 
 	let text = plough( arguments )
 		.map( function onEachParameter( parameter ){
-			if( parameter instanceof RegExp ){
+			if( clazof( parameter, RegExp ) ){
 				return null;
 			}
 
