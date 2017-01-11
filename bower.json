@@ -1,6 +1,6 @@
 {
   "name": "u200b",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "Append, prepend, and insert zero-width space to string.",
   "main": "u200b.js",
   "support": "u200b.support.js",
@@ -25,12 +25,12 @@
   ],
   "dependencies": {
     "arid": "^0.4.0",
-    "clazof": "^0.1.0",
+    "clazof": "^0.2.0",
     "diatom": "^0.4.0",
-    "harden": "^0.12.0",
+    "harden": "^0.13.0",
     "optfor": "^0.6.0",
     "plough": "^0.5.0",
-    "protype": "^0.7.0",
+    "protype": "^0.8.0",
     "truly": "^0.5.0"
   }
 }
