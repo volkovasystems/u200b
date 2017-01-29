@@ -1,6 +1,6 @@
 {
   "name": "u200b",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "Append, prepend, and insert zero-width space to string.",
   "main": "u200b.js",
   "support": "u200b.support.js",
@@ -28,21 +28,21 @@
   },
   "homepage": "https://github.com/volkovasystems/u200b#readme",
   "dependencies": {
-    "arid": "^0.4.0",
-    "babel-runtime": "^6.20.0",
-    "clazof": "^0.2.0",
-    "diatom": "^0.4.0",
-    "harden": "^0.13.0",
-    "optfor": "^0.6.0",
-    "plough": "^0.5.0",
-    "protype": "^0.8.0",
-    "truly": "^0.5.0"
+    "arid": "^0.7.0",
+    "babel-runtime": "^6.22.0",
+    "clazof": "^0.5.0",
+    "diatom": "^0.5.0",
+    "harden": "^0.14.0",
+    "optfor": "^0.10.0",
+    "plough": "^0.9.0",
+    "protype": "^0.11.0",
+    "truly": "^0.9.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.18.0",
-    "babel-core": "^6.21.0",
-    "babel-plugin-transform-runtime": "^6.15.0",
-    "babel-preset-latest": "^6.16.0",
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.22.1",
+    "babel-plugin-transform-runtime": "^6.22.0",
+    "babel-preset-latest": "^6.22.0",
     "source-map-loader": "^0.1.6",
     "webpack": "^1.14.0"
   }
