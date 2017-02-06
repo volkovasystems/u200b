@@ -54,6 +54,7 @@
 	@include:
 		{
 			"arid": "arid",
+			"clazof": "clazof",
 			"diatom": "diatom",
 			"harden": "harden",
 			"optfor": "optfor",
@@ -95,8 +96,8 @@ U200b.prototype.initialize = function initialize( string ){
 	*/
 
 	let text = plough( arguments )
-		.map( ( parameter ) => { return parameter.toString( ); } )
-		.filter( truly );
+		.filter( truly )
+		.map( ( parameter ) => { return parameter.toString( ); } );
 
 	//: This will handle the modification done to the strings.
 	this.history = this.history || [ ];
@@ -214,8 +215,8 @@ U200b.prototype.append = function append( string ){
 	*/
 
 	let text = plough( arguments )
-		.map( ( parameter ) => { return parameter.toString( ); } )
-		.filter( truly ) || [ ];
+		.filter( truly )
+		.map( ( parameter ) => { return parameter.toString( ); } ) || [ ];
 
 	this.string = this.string
 		.concat( text )
@@ -250,8 +251,8 @@ U200b.prototype.prepend = function prepend( string ){
 	*/
 
 	let text = plough( arguments )
-		.map( ( parameter ) => { return parameter.toString( ); } )
-		.filter( truly ) || [ ];
+		.filter( truly )
+		.map( ( parameter ) => { return parameter.toString( ); } ) || [ ];
 
 	this.string = text
 		.concat( this.string )
@@ -290,14 +291,14 @@ U200b.prototype.insert = function insert( string, pattern ){
 	*/
 
 	let text = plough( arguments )
+		.filter( truly )
 		.map( function onEachParameter( parameter ){
 			if( clazof( parameter, RegExp ) ){
 				return null;
 			}
 
 			return parameter.toString( );
-		} )
-		.filter( truly ) || [ ];
+		} ) || [ ];
 
 	let template = optfor( arguments, RegExp );
 
