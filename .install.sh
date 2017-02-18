@@ -26,4 +26,5 @@ optfor \
 plough \
 protype \
 truly \
---save
+--save \
+--force-latest
