@@ -3,11 +3,14 @@ babel-runtime \
 arid \
 clazof \
 diatom \
+falzy \
 harden \
 optfor \
 plough \
 protype \
+stringe \
 truly \
+wichevr \
 --save && \
 yarn add \
 babel-cli \
@@ -21,10 +24,13 @@ bower install \
 arid \
 clazof \
 diatom \
+falzy \
 harden \
 optfor \
 plough \
 protype \
+stringe \
 truly \
+wichevr \
 --save \
 --force-latest

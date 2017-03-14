@@ -56,11 +56,14 @@
               			"arid": "arid",
               			"clazof": "clazof",
               			"diatom": "diatom",
+              			"falzy": "falzy",
               			"harden": "harden",
               			"optfor": "optfor",
               			"plough": "plough",
               			"protype": "protype",
-              			"truly": "truly"
+              			"stringe": "stringe",
+              			"truly": "truly",
+              			"wichevr": "wichevr"
               		}
               	@end-include
               */
@@ -68,11 +71,14 @@
 var arid = require("arid");
 var clazof = require("clazof");
 var diatom = require("diatom");
+var falzy = require("falzy");
 var harden = require("harden");
 var optfor = require("optfor");
 var plough = require("plough");
 var protype = require("protype");
+var stringe = require("stringe");
 var truly = require("truly");
+var wichevr = require("wichevr");
 
 var U200b = diatom("U200b");
 
@@ -81,6 +87,9 @@ harden("U200B_BASE16", "ffffffff0000200bffffffff");
 harden("INSERT", "insert");
 harden("PREPEND", "prepend");
 harden("APPEND", "append");
+
+var EMPTY_SPACE = "";
+var SPACE = " ";
 
 U200b.prototype.initialize = function initialize(string) {
 	/*;
@@ -95,12 +104,10 @@ U200b.prototype.initialize = function initialize(string) {
                                                           	@end-meta-configuration
                                                           */
 
-	var text = plough(arguments).
-	filter(truly).
-	map(function (parameter) {return parameter.toString();});
+	var text = plough(arguments).filter(truly).map(stringe);
 
 	//: This will handle the modification done to the strings.
-	this.history = this.history || [];
+	this.history = wichevr(this.history, []);
 
 	//: Create an original copy.
 	this.text = [].concat(text);
@@ -178,7 +185,7 @@ U200b.prototype.release = function release() {
 };
 
 U200b.prototype.join = function join(separator) {
-	return this.release().join(separator || "");
+	return this.release().join(separator || EMPTY_SPACE);
 };
 
 U200b.prototype.toString = function toString() {
@@ -190,7 +197,7 @@ U200b.prototype.valueOf = function valueOf() {
 };
 
 U200b.prototype.raw = function raw() {
-	return this.toString().replace(new RegExp(this.type, "g"), "");
+	return stringe(this).replace(new RegExp(this.type, "g"), EMPTY_SPACE);
 };
 
 /*;
@@ -214,12 +221,9 @@ U200b.prototype.append = function append(string) {
                                                   	@end-meta-configuration
                                                   */
 
-	var text = plough(arguments).
-	filter(truly).
-	map(function (parameter) {return parameter.toString();}) || [];
+	var text = wichevr(plough(arguments).filter(truly).map(stringe), []);
 
-	this.string = this.string.
-	concat(text).
+	this.string = this.string.concat(text).
 	map(function onEachToken(token) {
 		return token + this.type;
 	}.bind(this));
@@ -250,12 +254,9 @@ U200b.prototype.prepend = function prepend(string) {
                                                     	@end-meta-configuration
                                                     */
 
-	var text = plough(arguments).
-	filter(truly).
-	map(function (parameter) {return parameter.toString();}) || [];
+	var text = wichevr(plough(arguments).filter(truly).map(stringe), []);
 
-	this.string = text.
-	concat(this.string).
+	this.string = text.concat(this.string).
 	map(function onEachToken(token) {
 		return this.type + token;
 	}.bind(this));
@@ -290,21 +291,19 @@ U200b.prototype.insert = function insert(string, pattern) {
                                                            	@end-meta-configuration
                                                            */
 
-	var text = plough(arguments).
-	filter(truly).
+	var text = wichevr(plough(arguments).filter(truly).
 	map(function onEachParameter(parameter) {
 		if (clazof(parameter, RegExp)) {
 			return null;
 		}
 
-		return parameter.toString();
-	}) || [];
+		return stringe(parameter);
+	}), []);
 
 	var template = optfor(arguments, RegExp);
 
 	if (truly(template)) {
-		this.string = this.string.
-		concat(text).
+		this.string = this.string.concat(text).
 		map(function onEachToken(token) {
 			return token.replace(template, this.type);
 		}.bind(this));
@@ -337,6 +336,33 @@ U200b.prototype.clear = function clear() {
 	this.history = [];
 
 	return this;
+};
+
+/*;
+   	@method-documentation:
+   		Replace the separating token with the specified token,
+   			this will also clear the zero width space applied.
+   	@end-method-documentation
+   */
+U200b.prototype.replace = function replace(separator, token) {
+	/*;
+                                                              	@meta-configuration:
+                                                              		{
+                                                              			"separator:required": "string",
+                                                              			"token:required": "string"
+                                                              		}
+                                                              	@end-meta-configuration
+                                                              */
+
+	if (falzy(separator) || !protype(separator, STRING)) {
+		separator = SPACE;
+	}
+
+	if (falzy(token) || !protype(token, STRING)) {
+		token = SPACE;
+	}
+
+	return this.separate().join(EMPTY_SPACE).split(separator).join(token);
 };
 
 module.exports = U200b;
