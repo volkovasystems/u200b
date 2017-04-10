@@ -780,13 +780,13 @@ browserify-zlib@^0.1.4:
   dependencies:
     pako "~0.2.0"
 
-budge@^0.20.0:
-  version "0.20.0"
-  resolved "https://registry.yarnpkg.com/budge/-/budge-0.20.0.tgz#469e335bc67cb7348990dceb902c1700d37b871c"
+budge@^0.21.0:
+  version "0.21.0"
+  resolved "https://registry.yarnpkg.com/budge/-/budge-0.21.0.tgz#d109ed0ca10909882395eae9ce36fcf37b74c04a"
   dependencies:
     arkount "^0.5.0"
     babel-runtime "^6.23.0"
-    depher "^0.25.0"
+    depher "^0.26.0"
     doubt "^0.24.0"
     raze "^0.25.0"
 
@@ -876,9 +876,9 @@ circular-json@^0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/circular-json/-/circular-json-0.3.1.tgz#be8b36aefccde8b3ca7aa2d6afc07a37242c0d2d"
 
-clazof@^0.20.0:
-  version "0.20.0"
-  resolved "https://registry.yarnpkg.com/clazof/-/clazof-0.20.0.tgz#79ba03b30799dd9c3a19b07ebb73b9803df18c12"
+clazof@^0.21.0:
+  version "0.21.0"
+  resolved "https://registry.yarnpkg.com/clazof/-/clazof-0.21.0.tgz#eeaebfcef46f8751788ba025753d638dcda22206"
   dependencies:
     babel-runtime "^6.23.0"
     falzy "^0.17.0"
@@ -886,7 +886,7 @@ clazof@^0.20.0:
     protype "^0.21.0"
     raze "^0.25.0"
     stringe "^0.2.0"
-    wauker "^0.7.0"
+    wauker "^0.8.0"
 
 cliui@^2.1.0:
   version "2.1.0"
@@ -1042,9 +1042,9 @@ delegates@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delegates/-/delegates-1.0.0.tgz#84c6e159b81904fdca59a0ef44cd870d31250f9a"
 
-dephall@^0.23.0:
-  version "0.23.0"
-  resolved "https://registry.yarnpkg.com/dephall/-/dephall-0.23.0.tgz#35b45059b71cf41b1f05a9fe3459b9de5f9d6297"
+dephall@^0.24.0:
+  version "0.24.0"
+  resolved "https://registry.yarnpkg.com/dephall/-/dephall-0.24.0.tgz#eed62a10b2224e0a2f49a93c37883acf9895fdfe"
   dependencies:
     arid "^0.23.0"
     babel-runtime "^6.23.0"
@@ -1052,17 +1052,17 @@ dephall@^0.23.0:
     falze "^0.20.0"
     harden "^0.21.0"
     leveld "^0.0.0"
-    pyck "^0.21.0"
+    pyck "^0.22.0"
     raze "^0.25.0"
     truly "^0.17.0"
     zelf "^0.11.0"
 
-depher@^0.25.0:
-  version "0.25.0"
-  resolved "https://registry.yarnpkg.com/depher/-/depher-0.25.0.tgz#f70adf8751ae28b01f4bbb1d4062c1d2133e6351"
+depher@^0.26.0:
+  version "0.26.0"
+  resolved "https://registry.yarnpkg.com/depher/-/depher-0.26.0.tgz#41d516b4365e37c66c08d9bd002d1ba22cdda654"
   dependencies:
     babel-runtime "^6.23.0"
-    dephall "^0.23.0"
+    dephall "^0.24.0"
     doubt "^0.24.0"
     falze "^0.20.0"
     harden "^0.21.0"
@@ -1082,16 +1082,16 @@ detect-indent@^4.0.0:
   dependencies:
     repeating "^2.0.0"
 
-diatom@^0.19.0:
-  version "0.19.0"
-  resolved "https://registry.yarnpkg.com/diatom/-/diatom-0.19.0.tgz#d18bbc78f16de40a8b14bda0b6b2299f6efaba78"
+diatom@^0.20.0:
+  version "0.20.0"
+  resolved "https://registry.yarnpkg.com/diatom/-/diatom-0.20.0.tgz#d039ad071c6d0bf9f0b66e4b63c1dda33d957afb"
   dependencies:
     arid "^0.23.0"
     babel-runtime "^6.23.0"
-    budge "^0.20.0"
+    budge "^0.21.0"
     falzy "^0.17.0"
     harden "^0.21.0"
-    komento "^0.21.0"
+    komento "^0.22.0"
     llamalize "^0.13.0"
     protype "^0.21.0"
 
@@ -1134,15 +1134,15 @@ ecc-jsbn@~0.1.1:
   dependencies:
     jsbn "~0.1.0"
 
-een@^0.13.0:
-  version "0.13.0"
-  resolved "https://registry.yarnpkg.com/een/-/een-0.13.0.tgz#93b1b7db3973c2c544591e35c611923e83375347"
+een@^0.16.0:
+  version "0.16.0"
+  resolved "https://registry.yarnpkg.com/een/-/een-0.16.0.tgz#2f115d2f1377e18327f897386cd447e7d2cb7de2"
   dependencies:
     babel-runtime "^6.23.0"
     doubt "^0.24.0"
-    kein "^0.16.0"
+    eqe "^0.0.0"
     protype "^0.21.0"
-    stringe "^0.2.0"
+    raze "^0.25.0"
     truly "^0.17.0"
 
 elliptic@^6.0.0:
@@ -1178,6 +1178,15 @@ enhanced-resolve@^3.0.0:
     memory-fs "^0.4.0"
     object-assign "^4.0.1"
     tapable "^0.2.5"
+
+eqe@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/eqe/-/eqe-0.0.0.tgz#320d21897a2cd4d870adc9f30a9fb4de2fe82a8d"
+  dependencies:
+    babel-runtime "^6.23.0"
+    nafe "^0.0.0"
+    protype "^0.21.0"
+    stringe "^0.2.0"
 
 errno@^0.1.3:
   version "0.1.4"
@@ -1690,12 +1699,12 @@ kind-of@^3.0.2:
   dependencies:
     is-buffer "^1.0.2"
 
-komento@^0.21.0:
-  version "0.21.0"
-  resolved "https://registry.yarnpkg.com/komento/-/komento-0.21.0.tgz#7c090d83c4097e4a1f048082171fbd8fb89151dd"
+komento@^0.22.0:
+  version "0.22.0"
+  resolved "https://registry.yarnpkg.com/komento/-/komento-0.22.0.tgz#9876fac3f3862b9763278ba10f0a1aa3af717d93"
   dependencies:
     babel-runtime "^6.23.0"
-    depher "^0.25.0"
+    depher "^0.26.0"
     falzy "^0.17.0"
     handlebars "^4.0.6"
     protype "^0.21.0"
@@ -1857,6 +1866,15 @@ ms@0.7.2:
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/ms/-/ms-0.7.2.tgz#ae25cf2512b3885a1d95d7f037868d8431124765"
 
+nafe@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/nafe/-/nafe-0.0.0.tgz#ac3e9faf6bcdbd7613d6cb2faebb01e831d3dc4a"
+  dependencies:
+    babel-runtime "^6.23.0"
+    falzy "^0.17.0"
+    protype "^0.21.0"
+    stringe "^0.2.0"
+
 nan@^2.3.0:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.6.1.tgz#8c84f7b14c96b89f57fbc838012180ec8ca39a01"
@@ -1959,27 +1977,27 @@ once@^1.3.0, once@^1.3.3:
   dependencies:
     wrappy "1"
 
-optall@^0.15.0:
-  version "0.15.0"
-  resolved "https://registry.yarnpkg.com/optall/-/optall-0.15.0.tgz#65a1d0b4b42a35a99ac2fc46e71325da3674e858"
+optall@^0.16.0:
+  version "0.16.0"
+  resolved "https://registry.yarnpkg.com/optall/-/optall-0.16.0.tgz#f278d99faeeae1bfc3b5bbc3d0c9047f969e26be"
   dependencies:
     babel-runtime "^6.23.0"
     doubt "^0.24.0"
     falze "^0.20.0"
     harden "^0.21.0"
     protype "^0.21.0"
-    pyck "^0.21.0"
+    pyck "^0.22.0"
     zelf "^0.11.0"
 
-optfor@^0.20.0:
-  version "0.20.0"
-  resolved "https://registry.yarnpkg.com/optfor/-/optfor-0.20.0.tgz#4d57f6708cd13e6579cf12e20cc00dcd4f7f4562"
+optfor@^0.21.0:
+  version "0.21.0"
+  resolved "https://registry.yarnpkg.com/optfor/-/optfor-0.21.0.tgz#826b08831d72c9437180350e0400184beaff239f"
   dependencies:
     babel-runtime "^6.23.0"
     doubt "^0.24.0"
     falze "^0.20.0"
     harden "^0.21.0"
-    optall "^0.15.0"
+    optall "^0.16.0"
     protype "^0.21.0"
     zelf "^0.11.0"
 
@@ -2171,12 +2189,12 @@ punycode@^1.2.4, punycode@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
 
-pyck@^0.21.0:
-  version "0.21.0"
-  resolved "https://registry.yarnpkg.com/pyck/-/pyck-0.21.0.tgz#1b8ef48bd1a3aa10fe025b26c9866aa62674b0cc"
+pyck@^0.22.0:
+  version "0.22.0"
+  resolved "https://registry.yarnpkg.com/pyck/-/pyck-0.22.0.tgz#79ce1e85c9a69e27b328124d4a822b57b72d6526"
   dependencies:
     babel-runtime "^6.23.0"
-    clazof "^0.20.0"
+    clazof "^0.21.0"
     doubt "^0.24.0"
     falzy "^0.17.0"
     harden "^0.21.0"
@@ -2719,12 +2737,12 @@ watchpack@^1.3.1:
     chokidar "^1.4.3"
     graceful-fs "^4.1.2"
 
-wauker@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/wauker/-/wauker-0.7.0.tgz#70cea7f4d191978b664249b21ca10bebfdfdf80b"
+wauker@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/wauker/-/wauker-0.8.0.tgz#78ba627e2a0fa9fe91b3e45b5ee1815994d5e9d5"
   dependencies:
     babel-runtime "^6.23.0"
-    een "^0.13.0"
+    een "^0.16.0"
     falzy "^0.17.0"
     protease "^0.15.0"
     protype "^0.21.0"
