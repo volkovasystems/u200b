@@ -1,10 +1,13 @@
 "use strict";
 
+const assert = require( "assert" );
 const U200b = require( "./u200b.js" );
 
-console.log( U200b( "hello", "world" ) );
+assert.ok( U200b( "hello", "world" ) );
 
-console.log( U200b( "hello", "world" ).join( "." ) );
+assert.equal( U200b( "hello", "world" ).join( "." ), "hello​.world" );
 
 var test = U200b( "hello", "world" ).join( "." );
-console.log( U200b( test ).replace( ".", "_" ) );
+assert.equal( U200b( test ).replace( ".", "_" ), "hello_world" );
+
+console.log( "ok" );
