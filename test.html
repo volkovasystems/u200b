@@ -1,8 +1,31 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<script
-			type="application/javascript"
-			src="./u200b.deploy.js">
-		</script>
+		<title>u200b unit test</title>
+
+		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+
+		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
+
+		<script type="application/javascript" src="./u200b.deploy.js"></script>
 	</head>
+
+	<body>
+		<div id="qunit"></div>
+
+		<div id="qunit-fixture"></div>
+
+		<script type="application/javascript">
+			QUnit.test( "u200b unit test", function( assert ) {
+
+				assert.ok( u200b( "hello", "world" ) );
+
+				assert.equal( u200b( "hello", "world" ).join( "." ), "hello​.world", "should return 'hello​.world'" );
+
+				let test = u200b( "hello", "world" ).join( "." );
+				assert.equal( u200b( test ).replace( ".", "_" ), "hello_world", "should return 'hello​_world'" );
+
+			} );
+		</script>
+	</body>
 </html>
