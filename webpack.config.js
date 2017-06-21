@@ -2,6 +2,7 @@
 
 const webpack = require( "webpack" );
 const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
+const ModuleConcatenationPlugin = webpack.optimize.ModuleConcatenationPlugin;
 
 module.exports = {
 	"entry": "./u200b.support.js",
@@ -45,7 +46,8 @@ module.exports = {
 			"comments": false,
 			"sourceMap": true,
 			"mangle": false
-		} )
+		} ),
+		new ModuleConcatenationPlugin( )
 	],
 	"devtool": "#source-map"
 };
