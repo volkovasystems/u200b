@@ -61,7 +61,6 @@
               			"harden": "harden",
               			"optfor": "optfor",
               			"plough": "plough",
-              			"protype": "protype",
               			"stringe": "stringe",
               			"truly": "truly",
               			"wichevr": "wichevr"
@@ -76,7 +75,6 @@ var falzy = require("falzy");
 var harden = require("harden");
 var optfor = require("optfor");
 var plough = require("plough");
-var protype = require("protype");
 var stringe = require("stringe");
 var truly = require("truly");
 var wichevr = require("wichevr");
@@ -355,11 +353,11 @@ U200b.prototype.replace = function replace(separator, token) {
                                                               	@end-meta-configuration
                                                               */
 
-	if (falzy(separator) || !protype(separator, STRING)) {
+	if (falzy(separator) || typeof separator != "string") {
 		separator = SPACE;
 	}
 
-	if (falzy(token) || !protype(token, STRING)) {
+	if (falzy(token) || typeof token != "string") {
 		token = SPACE;
 	}
 

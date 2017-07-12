@@ -7,7 +7,6 @@ falzy \
 harden \
 optfor \
 plough \
-protype \
 stringe \
 truly \
 wichevr \
@@ -28,7 +27,6 @@ falzy \
 harden \
 optfor \
 plough \
-protype \
 stringe \
 truly \
 wichevr \
