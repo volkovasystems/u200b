@@ -17,7 +17,7 @@
 
 		<script type="application/javascript">
 			QUnit.test( "u200b unit test", function( assert ) {
-
+				let U200b = u200b;
 				assert.ok( U200b( "hello", "world" ), "should not throw error" );
 
 				assert.equal( U200b( "hello", "world" ).join( "." ), "hello​.world", "should be equal to 'hello​.world'" );
