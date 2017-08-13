@@ -18,12 +18,12 @@
 		<script type="application/javascript">
 			QUnit.test( "u200b unit test", function( assert ) {
 
-				assert.ok( u200b( "hello", "world" ) );
+				assert.ok( U200b( "hello", "world" ), "should not throw error" );
 
-				assert.equal( u200b( "hello", "world" ).join( "." ), "hello​.world", "should return 'hello​.world'" );
+				assert.equal( U200b( "hello", "world" ).join( "." ), "hello​.world", "should be equal to 'hello​.world'" );
 
-				let test = u200b( "hello", "world" ).join( "." );
-				assert.equal( u200b( test ).replace( ".", "_" ), "hello_world", "should return 'hello​_world'" );
+				let test = U200b( "hello", "world" ).join( "." );
+				assert.equal( U200b( test ).replace( ".", "_" ), "hello_world", "should be equal to 'hello​_world'" );
 
 			} );
 		</script>
