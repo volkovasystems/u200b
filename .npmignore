@@ -1,0 +1,7 @@
+.babelrc
+gulpfile.js
+*.sh
+*.html
+test.*
+wdio.*
+webpack.*
