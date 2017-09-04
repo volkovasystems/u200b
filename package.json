@@ -9,9 +9,21 @@
 	"scripts": {
 		"pristine": "rsetmod clean && flxc execute ./.install.sh",
 		"clear": "rsetmod clean --clear",
-		"build": "babel u200b.js --out-file u200b.support.js --source-maps && webpack --progress --display-modules",
-		"pretest": "npm run clear && npm run build",
-		"test": "node u200b-test.js"
+		"formal": "jesy apply '*.json'",
+		"build:support": "gulp --module u200b --all",
+		"build:deploy": "webpack --config webpack.compact.js --progress --display-modules",
+		"rebuild": "npm run build:support && npm run build:deploy",
+		"build": "npm run pristine && npm run rebuild",
+		"build:test:support": "gulp --module test --all",
+		"build:test:deploy": "webpack --config webpack.test.js --progress --display-modules",
+		"build:test:bridge": "gulp --module test --bridge",
+		"build:test": "npm run build:test:support && npm run build:test:deploy && npm run build:test:bridge",
+		"test:server": "mocha test.js && mocha test.js --reporter=json > test.server.json",
+		"test:client": "./node_modules/.bin/wdio wdio.client.js",
+		"pretest": "npm run clear && npm run rebuild && npm run build:test",
+		"test": "npm run test:server && npm run test:client",
+		"posttest": "npm run formal",
+		"deploy": "npm run build && npm run build:test && npm run test:server && npm run test:client && npm run formal"
 	},
 	"repository": {
 		"type": "git",
@@ -34,23 +46,15 @@
 	"homepage": "https://github.com/volkovasystems/u200b#readme",
 	"dependencies": {
 		"arid": "^0.30.0",
-		"babel-runtime": "^6.25.0",
+		"babel-runtime": "^6.26.0",
 		"clazof": "^0.36.0",
 		"diatom": "^0.34.0",
 		"falzy": "^0.23.0",
 		"harden": "^0.23.0",
 		"optfor": "^0.33.0",
 		"plough": "^0.29.0",
-		"stringe": "^0.5.0",
+		"stringe": "^0.6.0",
 		"truly": "^0.20.0",
 		"wichevr": "^0.14.0"
-	},
-	"devDependencies": {
-		"babel-cli": "^6.24.1",
-		"babel-core": "^6.25.0",
-		"babel-plugin-transform-runtime": "^6.23.0",
-		"babel-preset-latest": "^6.24.1",
-		"source-map-loader": "^0.2.1",
-		"webpack": "^3.5.4"
 	}
 }

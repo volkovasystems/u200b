@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>u200b unit test</title>
+		<meta charset="utf-8">
 
-		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+		<title>test:u200b</title>
 
-		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
-
-		<script type="application/javascript" src="./u200b.deploy.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css"/>
 	</head>
 
 	<body>
-		<div id="qunit"></div>
+		<div id="mocha"></div>
 
-		<div id="qunit-fixture"></div>
+		<script type="application/javascript" src="https://unpkg.com/mocha/mocha.js"></script>
 
 		<script type="application/javascript">
-			QUnit.test( "u200b unit test", function( assert ) {
-				let U200b = u200b;
-				assert.ok( U200b( "hello", "world" ), "should not throw error" );
+			mocha.setup( "bdd" );
+		</script>
 
-				assert.equal( U200b( "hello", "world" ).join( "." ), "hello​.world", "should be equal to 'hello​.world'" );
+		<script type="application/javascript" src="./test.deploy.js"></script>
 
-				let test = U200b( "hello", "world" ).join( "." );
-				assert.equal( U200b( test ).replace( ".", "_" ), "hello_world", "should be equal to 'hello​_world'" );
-
-			} );
+		<script type="application/javascript">
+			mocha.run( );
 		</script>
 	</body>
 </html>
