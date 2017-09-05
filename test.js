@@ -54,7 +54,7 @@
 const assert = require( "should" );
 
 //: @server:
-const u200b = require( "./u200b.js" );
+const U200b = require( "./u200b.js" );
 //: @end-server
 
 
@@ -63,11 +63,42 @@ const u200b = require( "./u200b.js" );
 
 
 //: @server:
-
 describe( "u200b", ( ) => {
 
-} );
+	describe( "`U200b( 'hello', 'world' )`", ( ) => {
+		it( "should contain history, string, text and type properties", ( ) => {
+			let result = U200b( "hello", "world" );
 
+			assert.equal( typeof result, "object" );
+
+			assert.equal( "history" in result, true );
+
+			assert.equal( "string" in result, true );
+
+			assert.equal( "text" in result, true );
+
+			assert.equal( "type" in result, true );
+		} );
+	} );
+
+	describe( "`U200b( 'hello', 'world' ).join( '.' )`", ( ) => {
+		it( "should be equal to 'hello​.world'", ( ) => {
+			let result = U200b( "hello", "world" ).join( "." );
+
+			assert.equal( result, "hello​.world" );
+		} );
+	} );
+
+	describe( "`U200b( 'hello', 'world' ).join( '.' ).replace( '.', '_' )`", ( ) => {
+		it( "should be equal to 'hello​_world'", ( ) => {
+			let data = U200b( "hello", "world" ).join( "." );
+			let result = U200b( data ).replace( ".", "_" );
+
+			assert.equal( result, "hello_world" );
+		} );
+	} );
+
+} );
 //: @end-server
 
 

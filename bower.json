@@ -22,5 +22,20 @@
 		"bower_components",
 		"test",
 		"tests"
-	]
+	],
+	"resolutions": {
+		"stringe": "^0.6.0"
+	},
+	"dependencies": {
+		"arid": "^0.30.0",
+		"clazof": "^0.36.0",
+		"diatom": "^0.34.0",
+		"falzy": "^0.23.0",
+		"harden": "^0.23.0",
+		"optfor": "^0.33.0",
+		"plough": "^0.29.0",
+		"stringe": "^0.6.0",
+		"truly": "^0.20.0",
+		"wichevr": "^0.14.0"
+	}
 }

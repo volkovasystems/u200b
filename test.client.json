@@ -1,0 +1,148 @@
+{
+	"state": {
+		"passed": 3,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-09-05T07:28:41.109Z",
+	"end": "2017-09-05T07:29:19.026Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "u200b",
+			"duration": 0,
+			"start": "2017-09-05T07:29:18.589Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "u200b",
+			"duration": 260,
+			"start": "2017-09-05T07:29:18.589Z",
+			"end": "2017-09-05T07:29:18.849Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-09-05T07:29:18.591Z",
+					"end": "2017-09-05T07:29:18.591Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "u200b",
+					"associatedTest": "should contain history, string, text and type properties"
+				},
+				{
+					"start": "2017-09-05T07:29:18.741Z",
+					"end": "2017-09-05T07:29:18.741Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "u200b",
+					"associatedTest": "should contain history, string, text and type properties"
+				},
+				{
+					"start": "2017-09-05T07:29:18.742Z",
+					"end": "2017-09-05T07:29:18.742Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "u200b",
+					"associatedTest": "should be equal to 'hello​.world'"
+				},
+				{
+					"start": "2017-09-05T07:29:18.796Z",
+					"end": "2017-09-05T07:29:18.797Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "u200b",
+					"associatedTest": "should be equal to 'hello​.world'"
+				},
+				{
+					"start": "2017-09-05T07:29:18.797Z",
+					"end": "2017-09-05T07:29:18.797Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "u200b",
+					"associatedTest": "should be equal to 'hello​_world'"
+				},
+				{
+					"start": "2017-09-05T07:29:18.849Z",
+					"end": "2017-09-05T07:29:18.849Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "u200b",
+					"associatedTest": "should be equal to 'hello​_world'"
+				},
+				{
+					"start": "2017-09-05T07:29:18.849Z",
+					"end": "2017-09-05T07:29:18.849Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "u200b"
+				}
+			]
+		},
+		{
+			"name": "`U200b( 'hello', 'world' )`",
+			"duration": 151,
+			"start": "2017-09-05T07:29:18.590Z",
+			"end": "2017-09-05T07:29:18.741Z",
+			"tests": [
+				{
+					"name": "should contain history, string, text and type properties",
+					"start": "2017-09-05T07:29:18.590Z",
+					"end": "2017-09-05T07:29:18.741Z",
+					"duration": 151,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`U200b( 'hello', 'world' ).join( '.' )`",
+			"duration": 56,
+			"start": "2017-09-05T07:29:18.741Z",
+			"end": "2017-09-05T07:29:18.797Z",
+			"tests": [
+				{
+					"name": "should be equal to 'hello​.world'",
+					"start": "2017-09-05T07:29:18.742Z",
+					"end": "2017-09-05T07:29:18.796Z",
+					"duration": 54,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`U200b( 'hello', 'world' ).join( '.' ).replace( '.', '_' )`",
+			"duration": 52,
+			"start": "2017-09-05T07:29:18.797Z",
+			"end": "2017-09-05T07:29:18.849Z",
+			"tests": [
+				{
+					"name": "should be equal to 'hello​_world'",
+					"start": "2017-09-05T07:29:18.797Z",
+					"end": "2017-09-05T07:29:18.848Z",
+					"duration": 51,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}

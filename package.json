@@ -56,5 +56,29 @@
 		"stringe": "^0.6.0",
 		"truly": "^0.20.0",
 		"wichevr": "^0.14.0"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-core": "^6.26.0",
+		"babel-plugin-transform-runtime": "^6.23.0",
+		"babel-preset-latest": "^6.24.1",
+		"electron": "^1.7.5",
+		"gulp": "^3.9.1",
+		"gulp-babel": "^7.0.0",
+		"gulp-changed": "^3.1.0",
+		"gulp-debug": "^3.1.0",
+		"gulp-plumber": "^1.1.0",
+		"gulp-rename": "^1.2.2",
+		"gulp-replace": "^0.6.1",
+		"gulp-sourcemaps": "^2.6.1",
+		"mocha": "^3.5.0",
+		"should": "^12.0.0",
+		"source-map-loader": "^0.2.1",
+		"wdio-json-reporter": "^0.2.1",
+		"wdio-mocha-framework": "^0.5.11",
+		"wdio-selenium-standalone-service": "^0.0.9",
+		"webdriverio": "^4.8.0",
+		"webpack": "^3.5.5",
+		"yargs": "^8.0.2"
 	}
 }

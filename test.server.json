@@ -1,16 +1,60 @@
 {
-  "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-09-02T12:39:57.523Z",
-    "end": "2017-09-02T12:39:57.523Z",
-    "duration": 0
-  },
-  "tests": [],
-  "pending": [],
-  "failures": [],
-  "passes": []
+	"stats": {
+		"suites": 4,
+		"tests": 3,
+		"passes": 3,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-09-05T07:28:39.977Z",
+		"end": "2017-09-05T07:28:39.984Z",
+		"duration": 7
+	},
+	"tests": [
+		{
+			"title": "should contain history, string, text and type properties",
+			"fullTitle": "u200b `U200b( 'hello', 'world' )` should contain history, string, text and type properties",
+			"duration": 2,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 'hello​.world'",
+			"fullTitle": "u200b `U200b( 'hello', 'world' ).join( '.' )` should be equal to 'hello​.world'",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 'hello​_world'",
+			"fullTitle": "u200b `U200b( 'hello', 'world' ).join( '.' ).replace( '.', '_' )` should be equal to 'hello​_world'",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should contain history, string, text and type properties",
+			"fullTitle": "u200b `U200b( 'hello', 'world' )` should contain history, string, text and type properties",
+			"duration": 2,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 'hello​.world'",
+			"fullTitle": "u200b `U200b( 'hello', 'world' ).join( '.' )` should be equal to 'hello​.world'",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 'hello​_world'",
+			"fullTitle": "u200b `U200b( 'hello', 'world' ).join( '.' ).replace( '.', '_' )` should be equal to 'hello​_world'",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }
